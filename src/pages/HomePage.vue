@@ -15,7 +15,7 @@ import { legalLinks } from '../data/legalDocuments'
         <img :src="fjasLogo" alt="FJAS TI" />
       </div>
       <div class="home-copy">
-        <h1>FJAS TI</h1>
+        <h1>FJAS TI V2</h1>
         <p>Desenvolvemos e fornecemos software e serviços em tecnologia.</p>
       </div>
     </section>
