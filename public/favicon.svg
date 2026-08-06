@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="48"
+   height="46"
+   fill="none"
+   viewBox="0 0 48 46"
+   version="1.1"
+   id="svg31"
+   sodipodi:docname="favicon.svg"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview31"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="4.4067365"
+     inkscape:cx="1.0211639"
+     inkscape:cy="54.235147"
+     inkscape:window-width="1712"
+     inkscape:window-height="927"
+     inkscape:window-x="0"
+     inkscape:window-y="34"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg31" />
+  <mask
+     id="a"
+     width="48"
+     height="46"
+     x="0"
+     y="0"
+     maskUnits="userSpaceOnUse"
+     style="mask-type:alpha">
+    <path
+       fill="#000"
+       d="M25.842 44.938c-.664.844-2.021.375-2.021-.698V33.937a2.26 2.26 0 0 0-2.262-2.262H10.183c-.92 0-1.456-1.04-.92-1.788l7.48-10.471c1.07-1.498 0-3.579-1.842-3.579H1.133c-.92 0-1.456-1.04-.92-1.787L9.91.473c.214-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.471c-1.07 1.498 0 3.578 1.842 3.578h11.377c.943 0 1.473 1.088.89 1.832L25.843 44.94z"
+       style="fill:#000;fill-opacity:1"
+       id="path2" />
+  </mask>
+  <defs
+     id="defs31">
+    <filter
+       id="b"
+       width="60.045"
+       height="41.654"
+       x="-19.77"
+       y="16.149"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood17" />
+      <feBlend
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend17" />
+      <feGaussianBlur
+         result="effect1_foregroundBlur_2002_17158"
+         stdDeviation="7.659"
+         id="feGaussianBlur17" />
+    </filter>
+    <filter
+       id="c"
+       width="90.34"
+       height="51.437"
+       x="-54.613"
+       y="-7.533"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood18" />
+      <feBlend
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend18" />
+      <feGaussianBlur
+         result="effect1_foregroundBlur_2002_17158"
+         stdDeviation="7.659"
+         id="feGaussianBlur18" />
+    </filter>
+    <filter
+       id="d"
+       width="79.355"
+       height="29.4"
+       x="-49.64"
+       y="2.03"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood19" />
+      <feBlend
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend19" />
+      <feGaussianBlur
+         result="effect1_foregroundBlur_2002_17158"
+         stdDeviation="4.596"
+         id="feGaussianBlur19" />
+    </filter>
+    <filter
+       id="e"
+       width="79.579"
+       height="29.4"
+       x="-45.045"
+       y="20.029"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood20" />
+      <feBlend
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend20" />
+      <feGaussianBlur
+         result="effect1_foregroundBlur_2002_17158"
+         stdDeviation="4.596"
+         id="feGaussianBlur20" />
+    </filter>
+    <filter
+       id="f"
+       width="79.579"
+       height="29.4"
+       x="-43.513"
+       y="21.178"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood21" />
+      <feBlend
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend21" />
+      <feGaussianBlur
+         result="effect1_foregroundBlur_2002_17158"
+         stdDeviation="4.596"
+         id="feGaussianBlur21" />
+    </filter>
+    <filter
+       id="g"
+       width="74.749"
+       height="58.852"
+       x="15.756"
+       y="-17.901"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood22" />
+      <feBlend
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend22" />
+      <feGaussianBlur
+         result="effect1_foregroundBlur_2002_17158"
+         stdDeviation="7.659"
+         id="feGaussianBlur22" />
+    </filter>
+    <filter
+       id="h"
+       width="61.377"
+       height="25.362"
+       x="23.548"
+       y="2.284"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood23" />
+      <feBlend
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend23" />
+      <feGaussianBlur
+         result="effect1_foregroundBlur_2002_17158"
+         stdDeviation="4.596"
+         id="feGaussianBlur23" />
+    </filter>
+    <filter
+       id="i"
+       width="61.377"
+       height="25.362"
+       x="23.548"
+       y="2.284"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood24" />
+      <feBlend
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend24" />
+      <feGaussianBlur
+         result="effect1_foregroundBlur_2002_17158"
+         stdDeviation="4.596"
+         id="feGaussianBlur24" />
+    </filter>
+    <filter
+       id="j"
+       width="56.045"
+       height="63.649"
+       x="-27.636"
+       y="-22.853"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood25" />
+      <feBlend
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend25" />
+      <feGaussianBlur
+         result="effect1_foregroundBlur_2002_17158"
+         stdDeviation="4.596"
+         id="feGaussianBlur25" />
+    </filter>
+    <filter
+       id="k"
+       width="54.814"
+       height="64.646"
+       x="20.116"
+       y="-38.415"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood26" />
+      <feBlend
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend26" />
+      <feGaussianBlur
+         result="effect1_foregroundBlur_2002_17158"
+         stdDeviation="4.596"
+         id="feGaussianBlur26" />
+    </filter>
+    <filter
+       id="l"
+       width="33.541"
+       height="35.313"
+       x="24.641"
+       y="-11.323"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood27" />
+      <feBlend
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend27" />
+      <feGaussianBlur
+         result="effect1_foregroundBlur_2002_17158"
+         stdDeviation="4.596"
+         id="feGaussianBlur27" />
+    </filter>
+    <filter
+       id="m"
+       width="54.814"
+       height="64.646"
+       x="-29.286"
+       y="6.009"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood28" />
+      <feBlend
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend28" />
+      <feGaussianBlur
+         result="effect1_foregroundBlur_2002_17158"
+         stdDeviation="4.596"
+         id="feGaussianBlur28" />
+    </filter>
+    <filter
+       id="n"
+       width="54.814"
+       height="64.646"
+       x="-29.286"
+       y="6.009"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood29" />
+      <feBlend
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend29" />
+      <feGaussianBlur
+         result="effect1_foregroundBlur_2002_17158"
+         stdDeviation="4.596"
+         id="feGaussianBlur29" />
+    </filter>
+    <filter
+       id="o"
+       width="54.814"
+       height="64.646"
+       x="8.244"
+       y="-2.416"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood30" />
+      <feBlend
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend30" />
+      <feGaussianBlur
+         result="effect1_foregroundBlur_2002_17158"
+         stdDeviation="4.596"
+         id="feGaussianBlur30" />
+    </filter>
+    <filter
+       id="p"
+       width="39.409"
+       height="43.623"
+       x="18.713"
+       y="10.588"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood31" />
+      <feBlend
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend31" />
+      <feGaussianBlur
+         result="effect1_foregroundBlur_2002_17158"
+         stdDeviation="4.596"
+         id="feGaussianBlur31" />
+    </filter>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4978"
+       id="radialGradient5003"
+       gradientUnits="userSpaceOnUse"
+       cx="512.54547"
+       cy="-93.139793"
+       fx="512.54547"
+       fy="-93.139793"
+       r="35.831257"
+       gradientTransform="matrix(3.2625377,-0.04454716,0.03980701,2.9153824,-1422.4834,323.14554)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4978">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0"
+         id="stop4974" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0"
+         offset="1"
+         id="stop4976" />
+    </linearGradient>
+  </defs>
+  <g
+     id="g16774"
+     transform="matrix(0.22842471,0,0,0.22842471,-7.3368499,-7.8215234)"
+     style="display:inline">
+    <circle
+       style="fill:#ff5d27;fill-opacity:1;stroke:#ff5d27;stroke-width:8.52155;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path880-2"
+       cx="136.96301"
+       cy="136.01982"
+       r="93.577812"
+       inkscape:export-xdpi="639.39075"
+       inkscape:export-ydpi="639.39075"
+       inkscape:export-filename="/home/fjas/Documentos/FJAS IT/imagens/sgedu-logo.png" />
+    <g
+       id="g991-3-7"
+       style="fill:#ffffff;fill-opacity:1;stroke:#fffffa;stroke-width:3.26929;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-xdpi="639.39075"
+       inkscape:export-ydpi="639.39075"
+       transform="matrix(2.6065458,0,0,2.6065458,-853.00149,7.6710655)"
+       inkscape:export-filename="/home/fjas/Documentos/FJAS IT/imagens/sgedu-logo.png">
+      <g
+         id="g987-6-0"
+         style="fill:#ffffff;fill-opacity:1;stroke:#fffffa;stroke-width:3.26929;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#fffffa;stroke-width:3.26929;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:connector-curvature="0"
+           d="m 399.00127,34.062981 -16.53985,-8.269925 c -0.002,-6.62e-4 -0.003,-0.0015 -0.004,-0.0022 -1.69729,-0.843542 -3.72397,-0.843447 -5.42543,0.0022 l -16.53559,8.26775 c -2.08398,1.035514 -3.37927,3.12451 -3.3806,5.452572 v 19.676369 c -0.0133,2.329008 1.26985,4.426231 3.35563,5.477159 l 16.53919,8.269642 c 0.85347,0.427161 1.78969,0.6406 2.72591,0.6406 0.93603,0 1.87206,-0.213534 2.72506,-0.640317 l 16.53559,-8.26775 c 2.08408,-1.035514 3.37937,-3.124604 3.3805,-5.452571 V 39.512432 c -10e-4,-2.327022 -1.29633,-4.415923 -3.37606,-5.449451 z m -0.53629,25.152678 c -4.7e-4,0.832288 -0.46376,1.579466 -1.21349,1.951967 l -16.54032,8.270303 c -0.61053,0.305548 -1.33955,0.305548 -1.95064,-3.78e-4 l -16.53446,-8.267183 c -0.74491,-0.375432 -1.20404,-1.126771 -1.19827,-1.960951 0,-0.0045 0,-0.0091 0,-0.01352 V 39.514512 c 4.7e-4,-0.832477 0.46386,-1.579655 1.21359,-1.95225 l 16.5355,-8.267751 c 0.30356,-0.150835 0.63662,-0.2263 0.9696,-0.2263 0.33269,0 0.66537,0.07528 0.96856,0.225827 l 16.54079,8.270304 c 0.74548,0.370421 1.20876,1.117598 1.20914,1.949036 z"
+           id="path889-5-7-9" />
+      </g>
+    </g>
+    <g
+       style="fill:#ffffff;fill-opacity:1;stroke:#fffffa;stroke-opacity:1"
+       id="g899-9-53-3"
+       transform="matrix(0.24649447,0,0,0.24649447,73.722477,73.24815)"
+       inkscape:export-xdpi="639.39075"
+       inkscape:export-ydpi="639.39075"
+       inkscape:export-filename="/home/fjas/Documentos/FJAS IT/imagens/sgedu-logo.png">
+      <g
+         style="fill:#ffffff;fill-opacity:1;stroke:#fffffa;stroke-opacity:1"
+         id="g897-4-5-6">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#fffffa;stroke-opacity:1"
+           inkscape:connector-curvature="0"
+           d="m 486.131,118.932 c -5.109,-10.218 -17.536,-14.359 -27.753,-9.25 L 256.001,210.87 53.623,109.681 c -10.219,-5.109 -22.644,-0.967 -27.752,9.25 -5.11,10.219 -0.967,22.644 9.25,27.752 L 246.749,252.5 c 2.912,1.455 6.081,2.183 9.251,2.183 3.17,0 6.339,-0.728 9.25,-2.184 L 476.88,146.684 c 10.219,-5.109 14.36,-17.534 9.251,-27.752 z"
+           id="path895-8-6-0" />
+      </g>
+    </g>
+    <g
+       style="fill:#ffffff;fill-opacity:1;stroke:#fffffa;stroke-opacity:1"
+       id="g905-4-2-6"
+       transform="matrix(0.24649447,0,0,0.24649447,73.722477,73.24815)"
+       inkscape:export-xdpi="639.39075"
+       inkscape:export-ydpi="639.39075"
+       inkscape:export-filename="/home/fjas/Documentos/FJAS IT/imagens/sgedu-logo.png">
+      <g
+         style="fill:#ffffff;fill-opacity:1;stroke:#fffffa;stroke-opacity:1"
+         id="g903-6-9-2">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#fffffa;stroke-opacity:1"
+           inkscape:connector-curvature="0"
+           d="m 256.001,213.312 c -11.424,0 -20.685,9.262 -20.685,20.685 V 491.1 c 0,11.425 9.262,20.685 20.685,20.685 11.424,0 20.685,-9.261 20.685,-20.685 V 233.998 c 0,-11.424 -9.262,-20.686 -20.685,-20.686 z"
+           id="path901-9-1-6" />
+      </g>
+    </g>
+    <circle
+       style="fill:url(#radialGradient5003);fill-opacity:1;stroke:none;stroke-width:8.13458;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path880-2-0"
+       cx="137.10536"
+       cy="136.75215"
+       r="89.328506"
+       inkscape:export-xdpi="639.39075"
+       inkscape:export-ydpi="639.39075"
+       inkscape:export-filename="/home/fjas/Documentos/FJAS IT/imagens/sgedu-logo.png" />
+  </g>
+</svg>
