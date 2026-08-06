@@ -326,7 +326,8 @@ a {
   padding-top: 24px;
 }
 
-.legal-footer button {
+.legal-footer button,
+.legal-home-link {
   min-height: 42px;
   padding: 9px 14px;
   border: 1px solid var(--border);
@@ -334,6 +335,7 @@ a {
   color: var(--text-strong);
   background: var(--surface);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .legal-footer nav {
