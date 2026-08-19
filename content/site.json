@@ -1,0 +1,167 @@
+{
+  "site": {
+    "brand": "POLOGO",
+    "description": "Website modular com microgestor de conteudo para landing pages.",
+    "defaultPageId": "home"
+  },
+  "pages": [
+    {
+      "id": "home",
+      "title": "Pologo - Digital Creative Agency",
+      "slug": "/",
+      "menu": [
+        { "label": "Inicio", "href": "#home", "kind": "section" },
+        { "label": "Servicos", "href": "#services", "kind": "section" },
+        { "label": "Produtos", "href": "#products", "kind": "section" },
+        { "label": "Precos", "href": "#pricing", "kind": "section" },
+        { "label": "Contato", "href": "#contact", "kind": "section" },
+        { "label": "Admin", "href": "/admin", "kind": "page" }
+      ],
+      "sections": [
+        {
+          "id": "home",
+          "type": "AgencyHero",
+          "enabled": true,
+          "data": {
+            "eyebrow": "Welcome On Site",
+            "title": "Together, We Are A Digital Creative Agency",
+            "text": "Criamos websites, campanhas e produtos digitais com uma estrutura visual limpa, modular e facil de atualizar.",
+            "primaryAction": { "label": "Get Started", "href": "#contact" },
+            "secondaryAction": { "label": "Register Now", "href": "#pricing" },
+            "badgeTitle": "Recognized in 20+ Countries",
+            "badgeText": "Projetos digitais consistentes para empresas que precisam crescer com clareza.",
+            "images": [
+              {
+                "src": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80",
+                "alt": "Equipe em reuniao criativa",
+                "width": 420,
+                "height": 520
+              },
+              {
+                "src": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
+                "alt": "Profissional trabalhando em notebook",
+                "width": 300,
+                "height": 380
+              }
+            ]
+          }
+        },
+        {
+          "id": "services",
+          "type": "ServiceSteps",
+          "enabled": true,
+          "data": {
+            "eyebrow": "Our Service",
+            "title": "A process designed for fast business movement",
+            "action": { "label": "View All", "href": "#products" },
+            "items": [
+              { "number": "01.", "title": "Find Your Problem", "text": "Mapeamos gargalos, oportunidades e objetivos da sua landing page." },
+              { "number": "02.", "title": "Research Your Business", "text": "Organizamos contexto, publico, oferta e diferenciais comerciais." },
+              { "number": "03.", "title": "Processing Time On Target", "text": "Construimos componentes reutilizaveis e conteudo editavel." },
+              { "number": "04.", "title": "Open In Progress", "text": "Publicamos, medimos e melhoramos a comunicacao com rapidez." }
+            ]
+          }
+        },
+        {
+          "id": "clients",
+          "type": "ClientGallery",
+          "enabled": true,
+          "data": {
+            "kicker": "0+",
+            "title": "Our Client",
+            "text": "Marcas, campanhas e produtos digitais organizados em uma estrutura simples de manter.",
+            "images": [
+              { "src": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=700&q=80", "alt": "Reuniao de estrategia", "width": 330, "height": 260 },
+              { "src": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=700&q=80", "alt": "Equipe em sala", "width": 330, "height": 260 },
+              { "src": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=700&q=80", "alt": "Apresentacao de negocio", "width": 330, "height": 260 },
+              { "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=80", "alt": "Workshop criativo", "width": 330, "height": 260 }
+            ]
+          }
+        },
+        {
+          "id": "products",
+          "type": "ProductShowcase",
+          "enabled": true,
+          "data": {
+            "title": "Our Products Are Ready To Help Your Business",
+            "text": "Tenha uma base de site modular para criar novas paginas, trocar conteudo e manter campanhas sem depender de banco externo.",
+            "image": {
+              "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1100&q=80",
+              "alt": "Dashboard de produto digital",
+              "width": 560,
+              "height": 520
+            },
+            "items": [
+              { "title": "Building Website", "text": "Landing pages responsivas feitas com Vue." },
+              { "title": "SEO Product Digital", "text": "Estrutura limpa para conteudo indexavel." },
+              { "title": "Content Management", "text": "Microgestor com textos, menu e secoes." },
+              { "title": "Product Advertising", "text": "Blocos para ofertas, planos e campanhas." }
+            ]
+          }
+        },
+        {
+          "id": "article",
+          "type": "FeatureArticle",
+          "enabled": true,
+          "data": {
+            "date": "12 Agosto 2026",
+            "title": "Business Develops Quickly And Stably With Agency",
+            "text": "Uma boa landing page precisa unir design, velocidade e manutencao simples. Este template separa layout, dados e componentes para facilitar evolucao.",
+            "image": {
+              "src": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1000&q=80",
+              "alt": "Equipe desenvolvendo estrategia digital",
+              "width": 500,
+              "height": 620
+            },
+            "posts": [
+              { "title": "Rapid Development Of Agency Technology Today", "text": "Componentes reaproveitaveis reduzem retrabalho em campanhas." },
+              { "title": "The Role Of Content In Starting a Digital Business", "text": "Edicao simples ajuda o time a manter mensagens atualizadas." },
+              { "title": "How Landing Pages Convert More Clearly", "text": "Secoes bem definidas tornam a decisao do visitante mais natural." },
+              { "title": "When A Small CMS Is Enough", "text": "Arquivos JSON portateis funcionam bem para sites leves." }
+            ]
+          }
+        },
+        {
+          "id": "pricing",
+          "type": "PricingSection",
+          "enabled": true,
+          "data": {
+            "title": "Choose A Price That Suits Your Company",
+            "text": "Use estes planos como conteudo inicial. Tudo pode ser alterado no microgestor.",
+            "features": ["200+ people handle", "Secure Technology", "Result Best Analytics", "Critical Solution"],
+            "plans": [
+              { "name": "Start", "price": "$45", "period": "/monthly", "features": ["Tellus sed enim", "Landing page base"], "action": "Choose" },
+              { "name": "Growth", "price": "$72", "period": "/monthly", "features": ["Tellus sed enim", "Conteudo editavel"], "action": "Choose" },
+              { "name": "Scale", "price": "$99", "period": "/monthly", "features": ["Tellus sed enim", "Secoes extras"], "action": "Choose" },
+              { "name": "Custom", "price": "$105", "period": "/monthly", "features": ["Tellus sed enim", "Suporte dedicado"], "action": "Choose" }
+            ]
+          }
+        },
+        {
+          "id": "testimonials",
+          "type": "TestimonialsSection",
+          "enabled": true,
+          "data": {
+            "title": "Feelings Of The Clients",
+            "items": [
+              { "name": "Albert Flores", "meta": "2026", "quote": "O novo fluxo deixou nossas paginas mais rapidas de ajustar e publicar.", "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" },
+              { "name": "Kang Daniel", "meta": "2026", "quote": "A organizacao por secoes facilitou muito a manutencao das campanhas.", "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80" },
+              { "name": "Sian Albert", "meta": "2026", "quote": "Conseguimos testar textos e imagens sem mexer no codigo toda semana.", "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" }
+            ]
+          }
+        },
+        {
+          "id": "contact",
+          "type": "CtaSection",
+          "enabled": true,
+          "data": {
+            "cards": [
+              { "title": "Contact Us", "text": "Fale conosco para criar ou adaptar uma landing page.", "action": { "label": "Our Contact", "href": "mailto:contato@fjas.com.br" } },
+              { "title": "Take Our Survey", "text": "Organize briefing, oferta e conteudo inicial antes da publicacao.", "action": { "label": "Survey Now", "href": "#home" } }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
