@@ -51,7 +51,7 @@ watch(() => route.path, refreshContent)
         <LandingRenderer :page="page" />
       </main>
       <footer class="border-t border-zinc-200 bg-[#f6f4ef] px-5 py-8 text-center text-sm text-zinc-500">
-        {{ content.site.brand }} - Conteudo gerenciado por arquivo JSON portatil.
+        {{ content.site.brand }} - Todos os direitos reservados.
       </footer>
     </template>
 

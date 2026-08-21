@@ -1,6 +1,6 @@
 {
   "site": {
-    "brand": "POLOGO",
+    "brand": "FJAS-TI",
     "description": "Website modular com microgestor de conteudo para landing pages.",
     "defaultPageId": "home"
   },
@@ -220,7 +220,7 @@
           "enabled": true,
           "data": {
             "title": "Selecione um valor:",
-            "text": "Use estes planos como conteudo inicial. Tudo pode ser alterado no microgestor.",
+            "text": "Use estes planos como base, tudo depende do projeto.",
             "features": [
               "Diversas instituições parceiras",
               "Tecnologia segura",
@@ -230,7 +230,7 @@
             "plans": [
               {
                 "name": "Básico",
-                "price": "R$250",
+                "price": "R$300",
                 "period": "/Mês",
                 "features": [
                   "Suporte especializado",
@@ -240,7 +240,7 @@
               },
               {
                 "name": "Avançado",
-                "price": "R$400",
+                "price": "R$500",
                 "period": "/Mês",
                 "features": [
                   "Sistema escolhido",

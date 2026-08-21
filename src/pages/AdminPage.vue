@@ -232,7 +232,7 @@ function fieldLabel(key: string) {
       <main v-if="selectedPage" class="grid gap-5">
         <div class="rounded bg-white p-5 shadow-sm">
           <div class="flex flex-wrap items-center justify-between gap-3">
-            <h2 class="text-xl font-black">Configuracao da pagina</h2>
+            <h2 class="text-xl font-black">Configuração da página</h2>
             <div class="flex flex-wrap gap-2">
               <a :href="selectedPage.slug" target="_blank" class="inline-flex min-h-10 items-center gap-2 rounded border border-zinc-300 px-4 font-bold">
                 <Eye :size="17" />
@@ -261,7 +261,7 @@ function fieldLabel(key: string) {
           </div>
 
           <button type="button" class="mt-4 rounded border border-red-300 px-4 py-2 text-sm font-bold text-red-700" @click="removePage(selectedPage.id)">
-            Remover pagina
+            Remover página
           </button>
         </div>
 
@@ -274,8 +274,8 @@ function fieldLabel(key: string) {
                   <input v-model="item.label" class="rounded border border-zinc-300 px-3 py-2" placeholder="Rotulo" />
                   <input v-model="item.href" class="rounded border border-zinc-300 px-3 py-2" placeholder="#secao, /pagina ou https://..." />
                   <select v-model="item.kind" class="rounded border border-zinc-300 px-3 py-2">
-                    <option value="section">Secao da pagina</option>
-                    <option value="page">Pagina interna</option>
+                    <option value="section">Seção da página</option>
+                    <option value="page">Página interna</option>
                     <option value="external">Link externo</option>
                   </select>
                 </div>
@@ -290,7 +290,7 @@ function fieldLabel(key: string) {
               Adicionar link
             </button>
 
-            <h2 class="mt-8 text-xl font-black">Secoes</h2>
+            <h2 class="mt-8 text-xl font-black">Seções</h2>
             <select class="mt-4 w-full rounded border border-zinc-300 px-3 py-2" @change="addSection(($event.target as HTMLSelectElement).value)">
               <option value="">Adicionar componente</option>
               <option v-for="definition in sectionDefinitions" :key="definition.type" :value="definition.type">
@@ -336,7 +336,7 @@ function fieldLabel(key: string) {
                   <p class="text-sm text-zinc-500">{{ selectedSection.type }} / #{{ selectedSection.id }}</p>
                 </div>
                 <label class="grid gap-1 text-sm font-bold">
-                  ID da secao
+                  ID da seção
                   <input v-model="selectedSection.id" class="rounded border border-zinc-300 px-3 py-2 font-normal" />
                 </label>
               </div>
@@ -368,7 +368,7 @@ function fieldLabel(key: string) {
               </div>
             </template>
             <div v-else class="rounded border border-dashed border-zinc-300 p-10 text-center text-zinc-500">
-              Adicione ou selecione uma secao para editar.
+              Adicione ou selecione uma seção para editar.
             </div>
           </section>
         </div>
