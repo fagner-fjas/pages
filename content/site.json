@@ -2,7 +2,32 @@
   "site": {
     "brand": "FJAS-TI",
     "description": "Website modular com microgestor de conteudo para landing pages.",
-    "defaultPageId": "home"
+    "defaultPageId": "home",
+    "header": {
+      "brandName": "Fagner Jefferson",
+      "useLogo": true,
+      "logo": {
+        "src": "/uploads/1787444917362-fjas-logo.webp",
+        "alt": "FJAS-TI",
+        "width": 132,
+        "height": 36
+      },
+      "backgroundOpacity": 0.6,
+      "blur": 33
+    },
+    "palette": {
+      "pageBackground": "#eff3f6",
+      "surface": "#ffffff",
+      "mutedSurface": "#eff2f6",
+      "text": "#18181b",
+      "heading": "#09090b",
+      "softText": "#52525b",
+      "border": "#d4d4d8",
+      "accent": "#e85d3f",
+      "dark": "#343465",
+      "darkSoftText": "#a1a1aa",
+      "highlight": "#ffcf56"
+    }
   },
   "pages": [
     {
@@ -41,15 +66,33 @@
           "kind": "page"
         }
       ],
+      "footer": {
+        "enabled": true,
+        "text": "FJAS-TI - Todos os direitos reservados.",
+        "links": [
+          {
+            "label": "EULA",
+            "href": "/eula-sgedu-escola"
+          },
+          {
+            "label": "Politica de privacidade",
+            "href": "/politica-privacidade-sgedu-escola"
+          },
+          {
+            "label": "Termos de uso",
+            "href": "/termos-sgedu-escola"
+          }
+        ]
+      },
       "sections": [
         {
           "id": "home",
           "type": "AgencyHero",
           "enabled": true,
           "data": {
-            "eyebrow": "FJAS TI-Desenvolvimento sob medida",
-            "title": "Uma empresa especializada em desenvolvimento de sistemas",
-            "text": "Criamos websites, plataformas e produtos digitais com uma arquitetura de código limpa, modular e de fácil escalabilidade.",
+            "eyebrow": "FJAS Tecnologia da Informação",
+            "title": "Uma empresa especializada em desenvolvimento de software",
+            "text": "Criamos websites, plataformas e produtos digitais com arquitetura de código limpa, modular e de fácil escalabilidade.",
             "primaryAction": {
               "label": "Fale conosco",
               "href": "#contact"

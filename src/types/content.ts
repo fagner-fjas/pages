@@ -16,6 +16,34 @@ export type LinkField = {
   href: string
 }
 
+export type HeaderConfig = {
+  brandName: string
+  useLogo: boolean
+  logo: ImageField
+  backgroundOpacity?: number
+  blur?: number
+}
+
+export type FooterConfig = {
+  enabled: boolean
+  text: string
+  links: LinkField[]
+}
+
+export type PaletteConfig = {
+  pageBackground: string
+  surface: string
+  mutedSurface: string
+  text: string
+  heading: string
+  softText: string
+  border: string
+  accent: string
+  dark: string
+  darkSoftText: string
+  highlight: string
+}
+
 export type PageSection = {
   id: string
   type: string
@@ -28,6 +56,7 @@ export type LandingPage = {
   title: string
   slug: string
   menu: MenuItem[]
+  footer?: FooterConfig
   sections: PageSection[]
 }
 
@@ -36,6 +65,8 @@ export type SiteContent = {
     brand: string
     description: string
     defaultPageId: string
+    header?: HeaderConfig
+    palette?: PaletteConfig
   }
   pages: LandingPage[]
 }

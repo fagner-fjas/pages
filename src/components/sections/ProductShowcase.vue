@@ -13,7 +13,7 @@ defineProps<{
 </script>
 
 <template>
-  <section class="bg-[#f6f4ef] px-5 py-16 md:px-8 md:py-24">
+  <section class="bg-[var(--site-bg)] px-5 py-16 md:px-8 md:py-24">
     <div class="mx-auto grid max-w-7xl items-start gap-12 lg:grid-cols-[0.95fr_1.05fr]">
       <img
         v-if="data.image"
@@ -23,15 +23,15 @@ defineProps<{
         :style="{ maxHeight: `${data.image.height || 520}px` }"
       />
       <div>
-        <h2 class="text-4xl font-black leading-tight text-zinc-950 md:text-5xl">{{ data.title }}</h2>
-        <p class="mt-6 max-w-2xl text-lg leading-8 text-zinc-600">{{ data.text }}</p>
-        <div class="mt-10 divide-y divide-zinc-300 border-y border-zinc-300">
+        <h2 class="text-4xl font-black leading-tight text-[var(--site-heading)] md:text-5xl">{{ data.title }}</h2>
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-[var(--site-soft)]">{{ data.text }}</p>
+        <div class="mt-10 divide-y divide-[color:var(--site-border)] border-y border-[color:var(--site-border)]">
           <a v-for="item in data.items" :key="item.title" href="#" class="flex items-center justify-between gap-5 py-6">
             <span>
-              <strong class="block text-xl text-zinc-950">{{ item.title }}</strong>
-              <span class="mt-1 block text-zinc-600">{{ item.text }}</span>
+              <strong class="block text-xl text-[var(--site-heading)]">{{ item.title }}</strong>
+              <span class="mt-1 block text-[var(--site-soft)]">{{ item.text }}</span>
             </span>
-            <ArrowUpRight class="shrink-0 text-[#e85d3f]" :size="24" />
+            <ArrowUpRight class="shrink-0 text-[var(--site-accent)]" :size="24" />
           </a>
         </div>
       </div>
