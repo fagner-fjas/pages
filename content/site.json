@@ -22,10 +22,10 @@
       "text": "#18181b",
       "heading": "#09090b",
       "softText": "#52525b",
-      "border": "#d4d4d8",
-      "accent": "#e85d3f",
-      "dark": "#343465",
-      "darkSoftText": "#a1a1aa",
+      "border": "#eff2f6",
+      "accent": "#3894f0",
+      "dark": "#2c85dd",
+      "darkSoftText": "#ffffff",
       "highlight": "#ffcf56"
     }
   },
@@ -41,18 +41,13 @@
           "kind": "section"
         },
         {
-          "label": "Servicos",
+          "label": "Etapas",
           "href": "#services",
           "kind": "section"
         },
         {
           "label": "Produtos",
           "href": "#products",
-          "kind": "section"
-        },
-        {
-          "label": "Precos",
-          "href": "#pricing",
           "kind": "section"
         },
         {
@@ -138,18 +133,18 @@
               },
               {
                 "number": "02.",
-                "title": "Arquitetura e Prototipagem",
-                "text": "Criamos identidade visual, a experiência do usuário e definimos as tecnologias mais eficientes."
+                "title": "Coleta de Dados",
+                "text": "Nesta etapa, os dados da sua instituição são coletados, organizados e estruturados para garantir segurança e estabilidade."
               },
               {
                 "number": "03.",
-                "title": "Construção e Testes",
-                "text": "Codificamos o sistema, realizando testes rigorosos para garantir segurança, estabilidade e alta performance."
+                "title": "Implantação",
+                "text": "Codificamos, realizando testes rigorosos e implantamos o sistema."
               },
               {
                 "number": "04.",
-                "title": "Suporte e Melhoria",
-                "text": "Colocamos o sistema no ar com segurança e oferecemos suporte contínuo para atualições e melhorias."
+                "title": "Melhoria e cursos",
+                "text": "oferecemos suporte contínuo e qualificação com um curso integrado para os usuários."
               }
             ]
           }
@@ -159,12 +154,12 @@
           "type": "ClientGallery",
           "enabled": true,
           "data": {
-            "kicker": "✔",
+            "kicker": "",
             "title": "Nossos sistemas",
-            "text": "Transformamos as necessidades de empresas parceiras em sistemas exclusivos, escaláveis e focados em resultados reais.",
+            "text": "Sistemas especializados e com foco em gestão, com plataforma de cursos integrados, como o SGedu, uma aplicação que facilita a rotina de dezenas de instituições de ensino pelo Brasil.",
             "images": [
               {
-                "src": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=700&q=80",
+                "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=80",
                 "alt": "Reuniao de estrategia",
                 "width": 330,
                 "height": 260
@@ -195,30 +190,30 @@
           "type": "ProductShowcase",
           "enabled": true,
           "data": {
-            "title": "Soluções web desenvolvidas para seu negócio",
-            "text": "Tecnologia robusta e exclusiva para o seu negócio. Transformamos suas necessidades em plataformas digitais de alta performance, escaláveis e seguras.",
+            "title": "SGedu.",
+            "text": "Um sistema criado especificamente para uma gestão escolar intuitiva, segura e de fácil acesso.",
             "image": {
-              "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1100&q=80",
+              "src": "https://www.image2url.com/r2/default/images/1787857043037-c0a427c5-3be2-4f89-aba4-fa967429fa02.png",
               "alt": "Dashboard de produto digital",
               "width": 560,
               "height": 520
             },
             "items": [
               {
-                "title": "Sistemas e plataformas web",
-                "text": "Desenvolvemos sistemas completos, painéis administrativos customizados e dashboards para automatizar e integrar os processos da sua empresa."
+                "title": "Dashboards integrados",
+                "text": "Acompanhe facilmente as estatísticas da instituição e controle cada passo em um único lugar."
               },
               {
-                "title": "Portais e sites corporativos",
-                "text": "Criação de websites de alta performance, totalmente responsivos e otimizados."
+                "title": "Controle de estudantes",
+                "text": "Cadastre, matricule e realize a gestão de alunos de forma intuitiva, tudo em conjunto com os responsáveis."
               },
               {
-                "title": "Integração a APIs",
-                "text": "Conectamos seu sistema interno com ferramentas de pagamento, logística e plataformas externas de forma segura."
+                "title": "Reconhecimento facial",
+                "text": "Obtenha um sistema interno com ferramentas de biometria facial, permitindo o controle de frequências dos alunos de forma automática e precisa."
               },
               {
-                "title": "Suporte e evolução contínua",
-                "text": "Garantimos que sua plataforma continue atualizada e com a possibilidade de novas funcionalidades com o nosso suporte técnico pós-entrega."
+                "title": "Sistema de segurança integrado",
+                "text": "Possibilidade de alertas em aparelhos de responsáveis em caso de situação perigosa ou emergencial ocorrendo na instituição, garantindo maior segurança."
               }
             ]
           }
@@ -232,7 +227,7 @@
             "title": "Engenharia de software focada em estabilidade, performance e escala.",
             "text": "Não criamos apenas código. Desenvolvemos  soluções digitais arquitetadas para rodar sem interrupções, fáceis de evoluir e preparadas para suportar o crescimento de sua operação.",
             "image": {
-              "src": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1000&q=80",
+              "src": "https://images.unsplash.com/photo-1634839387651-5317dc8f4549?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
               "alt": "Equipe desenvolvendo estrategia digital",
               "width": 500,
               "height": 620
@@ -260,7 +255,7 @@
         {
           "id": "pricing",
           "type": "PricingSection",
-          "enabled": true,
+          "enabled": false,
           "data": {
             "title": "Selecione um valor:",
             "text": "Use estes planos como base, tudo depende do projeto.",
@@ -324,19 +319,19 @@
               {
                 "name": "João Vitor",
                 "meta": "2026",
-                "quote": "O novo fluxo deixou nossas páginas mais rápidas de ajustar e publicar.",
+                "quote": "O SGedu facilitou muito a gestão com o reconhecimento facial e frequência eletrônica.",
                 "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80"
               },
               {
                 "name": "Lucas Silva",
                 "meta": "2026",
-                "quote": "A organização por seções facilitou muito a manutenção das campanhas.",
+                "quote": "A empresa fornece um suporte muito bom, estão sempre prontos para ajudar.",
                 "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80"
               },
               {
                 "name": "Maria do Carmo",
                 "meta": "2026",
-                "quote": "Conseguimos testar textos e imagens sem mexer no código toda semana.",
+                "quote": "Conseguimos realizar as atividades administrativas facilmente com o SGedu.",
                 "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80"
               }
             ]
