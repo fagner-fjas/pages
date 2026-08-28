@@ -94,7 +94,7 @@
             },
             "secondaryAction": {
               "label": "Solicitar orçamento",
-              "href": "#pricing"
+              "href": "#contact"
             },
             "badgeTitle": "Empresa com experiência na área",
             "badgeText": "Projetos digitais consistentes para empresas que precisam crescer com clareza.",
@@ -196,7 +196,7 @@
               "src": "https://www.image2url.com/r2/default/images/1787857043037-c0a427c5-3be2-4f89-aba4-fa967429fa02.png",
               "alt": "Dashboard de produto digital",
               "width": 560,
-              "height": 520
+              "height": 560
             },
             "items": [
               {
@@ -224,8 +224,8 @@
           "enabled": true,
           "data": {
             "date": "Nosso objetivo",
-            "title": "Engenharia de software focada em estabilidade, performance e escala.",
-            "text": "Não criamos apenas código. Desenvolvemos  soluções digitais arquitetadas para rodar sem interrupções, fáceis de evoluir e preparadas para suportar o crescimento de sua operação.",
+            "title": "Engenharia de software focada em gestão, UX  e performance.",
+            "text": "Não criamos apenas código. Desenvolvemos  soluções digitais sob demanda, arquitetadas a partir do diagnóstico do seu negócio, além de sistemas gestão em saúde e educação.",
             "image": {
               "src": "https://images.unsplash.com/photo-1634839387651-5317dc8f4549?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
               "alt": "Equipe desenvolvendo estrategia digital",
@@ -234,20 +234,20 @@
             },
             "posts": [
               {
-                "title": "Desenvolvimento ágil e componentização.",
-                "text": "Utilizamos componentes modulares e reaproveitáveis que reduzem o tempo de entrega e facilitam a manutenção do sistema."
-              },
-              {
-                "title": "Arquitetura focada em conversão e UX",
-                "text": "A jornada do usuário e a velocidade do sistema são planejadas para que a navegação seja fluida, aumentando a retenção do seu cliente."
+                "title": "Estrutura modular e evolução contínua.",
+                "text": "No nosso sistema de gestão escolar, utilizamos módulos independentes que reduzem o tempo de implantação, o que permite novas funções em desenvolvimento sejam implementadas e atualizadas sem interromper o uso diário do sistema."
               },
               {
                 "title": "Código limpo e independência na gestão",
-                "text": "Desenvolvemos painéis intuitivos que permitem a sua equipe gerenciar dados, atualizar conteúdos e acompanhar métricas sem depender de suporte técnico."
+                "text": "A jornada do usuário e a velocidade do sistema são planejadas para que a navegação seja fluida, Desenvolvemos painéis intuitivos que permitem a sua equipe gerenciar dados, atualizar conteúdos e acompanhar métricas sem depender de suporte técnico."
               },
               {
-                "title": "APIs leves e performance de nuvem",
-                "text": "Utilizamos JSON estruturado para garantir telas que carregam instantaneamente e consomem menos recursos."
+                "title": "Experiência fluida para alunos, pais e gestores",
+                "text": "A jornada do usuário dentro da plataforma é inteiramente desenhada com foco na realidade da rotina escolar. Criamos interfaces mobile e desktop extremamente simples e acessíveis, pensadas tanto para que os pais acompanhem a vida acadêmica e financeira dos filhos em poucos cliques, quanto para que os professores lancem notas e conteúdos rapidamente. O resultado é a redução de chamados na secretaria e um aumento real no engajamento de toda a comunidade escolar"
+              },
+              {
+                "title": "Desenvolvimento sob demanda e ecossistema modular",
+                "text": "Nenhuma empresa opera da mesma forma. Em vez de prender sua instituição a um software engessado, criamos funcionalidades personalizadas e sistemas exclusivos para a sua rotina. Seja um método próprio de avaliação, um fluxo financeiro específico ou um portal customizado, desenvolvemos soluções sob medida que se integram perfeitamente à sua operação, garantindo evolução tecnológica no seu ritmo."
               }
             ]
           }
@@ -325,13 +325,13 @@
               {
                 "name": "Lucas Silva",
                 "meta": "2026",
-                "quote": "A empresa fornece um suporte muito bom, estão sempre prontos para ajudar.",
+                "quote": "A empresa fornece um suporte muito bom, estão sempre prontos para ajudar e o sistema é realmente intuitivo.",
                 "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80"
               },
               {
                 "name": "Maria do Carmo",
                 "meta": "2026",
-                "quote": "Conseguimos realizar as atividades administrativas facilmente com o SGedu.",
+                "quote": "Conseguimos realizar as atividades administrativas facilmente com o SGedu, facilitou bastante a rotina escolar.",
                 "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80"
               }
             ]
