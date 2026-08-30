@@ -12,7 +12,7 @@ defineProps<{
 </script>
 
 <template>
-  <section class="bg-[var(--site-dark)] px-5 py-16 text-white md:px-8 md:py-24">
+  <section class="bg-[var(--section-bg,var(--site-dark))] px-5 py-16 text-white md:px-8 md:py-24">
     <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.72fr_1.28fr]">
       <div class="self-end">
         <p class="text-6xl font-black text-[var(--site-accent)]">{{ data.kicker }}</p>

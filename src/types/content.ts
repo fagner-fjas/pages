@@ -48,6 +48,10 @@ export type PageSection = {
   id: string
   type: string
   enabled: boolean
+  marginTop?: number
+  marginBottom?: number
+  backgroundColor?: string
+  backgroundTransparent?: boolean
   data: Record<string, unknown>
 }
 

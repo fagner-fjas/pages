@@ -9,7 +9,7 @@ const props = defineProps<{
 }>()
 
 const emit = defineEmits<{
-  addItem: [target: unknown[]]
+  addItem: [target: unknown[], fieldKey: string | number]
   removeItem: [target: unknown[], index: number]
   imageSelected: [event: Event, object: Record<string, unknown>]
 }>()
@@ -23,6 +23,7 @@ const value = computed({
 
 const inputType = computed(() => (typeof value.value === 'number' ? 'number' : 'text'))
 const isImageObject = computed(() => isRecord(value.value) && 'src' in value.value)
+const isImagePositionField = computed(() => props.fieldKey === 'imagePosition' && typeof value.value === 'string')
 
 function isRecord(nextValue: unknown): nextValue is Record<string, unknown> {
   return Boolean(nextValue) && typeof nextValue === 'object' && !Array.isArray(nextValue)
@@ -35,7 +36,15 @@ function fieldLabel(key: string) {
 
 <template>
   <div>
-    <label v-if="typeof value === 'string' || typeof value === 'number'" class="grid gap-2 text-sm font-bold">
+    <label v-if="isImagePositionField" class="grid gap-2 text-sm font-bold">
+      {{ label }}
+      <select v-model="value" class="rounded border border-zinc-300 px-3 py-2 font-normal">
+        <option value="left">Imagem à esquerda / texto à direita</option>
+        <option value="right">Texto à esquerda / imagem à direita</option>
+      </select>
+    </label>
+
+    <label v-else-if="typeof value === 'string' || typeof value === 'number'" class="grid gap-2 text-sm font-bold">
       {{ label }}
       <textarea
         v-if="typeof value === 'string' && value.length > 80"
@@ -59,7 +68,7 @@ function fieldLabel(key: string) {
     <div v-else-if="Array.isArray(value)">
       <div class="mb-3 flex items-center justify-between gap-3">
         <h3 class="font-black">{{ label }}</h3>
-        <button type="button" class="rounded border border-zinc-300 px-3 py-2 text-sm font-bold" @click="emit('addItem', value)">
+        <button type="button" class="rounded border border-zinc-300 px-3 py-2 text-sm font-bold" @click="emit('addItem', value, fieldKey)">
           Adicionar item
         </button>
       </div>
@@ -77,7 +86,7 @@ function fieldLabel(key: string) {
               :label="fieldLabel(String(nestedKey))"
               :model="item"
               :field-key="String(nestedKey)"
-              @add-item="emit('addItem', $event)"
+              @add-item="(target, targetFieldKey) => emit('addItem', target, targetFieldKey)"
               @remove-item="(target, itemIndex) => emit('removeItem', target, itemIndex)"
               @image-selected="(event, object) => emit('imageSelected', event, object)"
             />
@@ -103,7 +112,7 @@ function fieldLabel(key: string) {
           :label="fieldLabel(String(nestedKey))"
           :model="value"
           :field-key="String(nestedKey)"
-          @add-item="emit('addItem', $event)"
+          @add-item="(target, targetFieldKey) => emit('addItem', target, targetFieldKey)"
           @remove-item="(target, itemIndex) => emit('removeItem', target, itemIndex)"
           @image-selected="(event, object) => emit('imageSelected', event, object)"
         />

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import { ArrowDown, ArrowUp, Eye, Plus, Save, Trash2 } from '@lucide/vue'
 import RecursiveField from '../components/admin/RecursiveField.vue'
 import { loadContent, login, saveContent, uploadImage } from '../services/contentService'
@@ -17,6 +17,7 @@ const uploadWidth = ref(1200)
 const uploadHeight = ref(0)
 const activeTab = ref<'content' | 'site'>('content')
 const originalContentSnapshot = ref('')
+const adminSelectionStorageKey = 'cms-admin-selection'
 const paletteFields = [
   { key: 'pageBackground', label: 'Fundo da pagina' },
   { key: 'surface', label: 'Superficie clara' },
@@ -40,9 +41,10 @@ onMounted(async () => {
   content.value = await loadContent()
   ensureContentDefaults()
   originalContentSnapshot.value = JSON.stringify(content.value)
-  selectedPageId.value = content.value.pages[0]?.id ?? ''
-  selectedSectionId.value = selectedPage.value?.sections[0]?.id ?? ''
+  restoreAdminSelection()
 })
+
+watch([selectedPageId, selectedSectionId, activeTab], saveAdminSelection)
 
 async function handleLogin() {
   error.value = ''
@@ -104,6 +106,21 @@ function ensureContentDefaults() {
         { label: 'Termos de uso', href: '/termos-sgedu-escola' },
       ],
     }
+
+    for (const section of page.sections) {
+      section.marginTop ??= 0
+      section.marginBottom ??= 0
+      section.backgroundColor ??= ''
+      section.backgroundTransparent ??= false
+
+      if (section.type === 'ProductShowcase' && Array.isArray(section.data.items)) {
+        section.data.items = section.data.items.map((item) =>
+          typeof item === 'string'
+            ? { title: item, text: '', href: '' }
+            : item,
+        )
+      }
+    }
   }
 }
 
@@ -116,12 +133,51 @@ async function persist() {
   status.value = ''
 
   try {
+    saveAdminSelection()
     await saveContent(content.value, token.value)
     originalContentSnapshot.value = JSON.stringify(content.value)
     status.value = 'Conteudo salvo no arquivo content/site.json.'
   } catch (saveError) {
     error.value = saveError instanceof Error ? saveError.message : 'Nao foi possivel salvar.'
   }
+}
+
+function restoreAdminSelection() {
+  if (!content.value) {
+    return
+  }
+
+  const fallbackPage = content.value.pages[0]
+  let storedSelection: { pageId?: string; sectionId?: string; activeTab?: 'content' | 'site' } = {}
+
+  try {
+    storedSelection = JSON.parse(sessionStorage.getItem(adminSelectionStorageKey) || '{}')
+  } catch {
+    storedSelection = {}
+  }
+
+  const page = content.value.pages.find((item) => item.id === storedSelection.pageId) ?? fallbackPage
+  selectedPageId.value = page?.id ?? ''
+
+  const section =
+    page?.sections.find((item) => item.id === storedSelection.sectionId) ??
+    page?.sections[0]
+  selectedSectionId.value = section?.id ?? ''
+
+  if (storedSelection.activeTab === 'content' || storedSelection.activeTab === 'site') {
+    activeTab.value = storedSelection.activeTab
+  }
+}
+
+function saveAdminSelection() {
+  sessionStorage.setItem(
+    adminSelectionStorageKey,
+    JSON.stringify({
+      pageId: selectedPageId.value,
+      sectionId: selectedSectionId.value,
+      activeTab: activeTab.value,
+    }),
+  )
 }
 
 function addPage() {
@@ -154,6 +210,14 @@ function addPage() {
 
 function removePage(pageId: string) {
   if (!content.value || content.value.pages.length <= 1) {
+    window.alert('Nao e possivel remover a ultima landing page.')
+    return
+  }
+
+  const page = content.value.pages.find((item) => item.id === pageId)
+  const pageName = page?.title || pageId
+
+  if (!window.confirm(`Deseja remover a landing page "${pageName}"?`)) {
     return
   }
 
@@ -182,6 +246,36 @@ function moveMenuItem(index: number, direction: -1 | 1) {
   menu.splice(target, 0, item)
 }
 
+function updateSelectedPageId(nextId: string) {
+  const page = selectedPage.value
+
+  if (!page) {
+    return
+  }
+
+  page.id = nextId
+  selectedPageId.value = nextId
+}
+
+function updateSelectedSectionId(nextId: string) {
+  const section = selectedSection.value
+
+  if (!section) {
+    return
+  }
+
+  section.id = nextId
+  selectedSectionId.value = nextId
+}
+
+function updateSelectedSectionBackgroundColor(nextColor: string) {
+  if (!selectedSection.value) {
+    return
+  }
+
+  selectedSection.value.backgroundColor = nextColor
+}
+
 function addSection(type: string) {
   const definition = sectionDefinitions.find((item) => item.type === type)
 
@@ -191,6 +285,10 @@ function addSection(type: string) {
 
   const section = structuredClone(definition.defaults)
   section.id = `${definition.defaults.id}-${Date.now()}`
+  section.marginTop ??= 0
+  section.marginBottom ??= 0
+  section.backgroundColor ??= ''
+  section.backgroundTransparent ??= false
   selectedPage.value.sections.push(section)
   selectedSectionId.value = section.id
 }
@@ -216,7 +314,16 @@ function moveSection(index: number, direction: -1 | 1) {
   page.sections.splice(target, 0, section)
 }
 
-function addArrayItem(target: unknown[]) {
+function addArrayItem(target: unknown[], fieldKey?: string | number) {
+  if (!window.confirm('Deseja adicionar um novo item?')) {
+    return
+  }
+
+  if (selectedSection.value?.type === 'ProductShowcase' && fieldKey === 'items') {
+    target.push({ title: 'Novo item', text: 'Descricao do item.', href: '' })
+    return
+  }
+
   const sample = target[0]
 
   if (typeof sample === 'string') {
@@ -225,7 +332,7 @@ function addArrayItem(target: unknown[]) {
   }
 
   if (sample && typeof sample === 'object') {
-    target.push(structuredClone(sample))
+    target.push(JSON.parse(JSON.stringify(sample)))
     return
   }
 
@@ -233,6 +340,10 @@ function addArrayItem(target: unknown[]) {
 }
 
 function removeArrayItem(target: unknown[], index: number) {
+  if (!window.confirm(`Deseja remover o item ${index + 1}?`)) {
+    return
+  }
+
   target.splice(index, 1)
 }
 
@@ -349,17 +460,30 @@ function fieldLabel(key: string) {
           </div>
 
           <div class="mt-5 space-y-2">
-            <button
+            <div
               v-for="page in content.pages"
               :key="page.id"
-              type="button"
-              class="w-full rounded border px-4 py-3 text-left"
+              class="grid grid-cols-[1fr_auto] items-center gap-2 rounded border p-2"
               :class="page.id === selectedPageId ? 'border-[#e85d3f] bg-orange-50' : 'border-zinc-200 bg-white'"
-              @click="selectedPageId = page.id; selectedSectionId = page.sections[0]?.id ?? ''"
             >
-              <strong class="block">{{ page.title }}</strong>
-              <span class="text-sm text-zinc-500">{{ page.slug }}</span>
-            </button>
+              <button
+                type="button"
+                class="min-w-0 rounded px-2 py-1 text-left hover:bg-white/70"
+                @click="selectedPageId = page.id; selectedSectionId = page.sections[0]?.id ?? ''"
+              >
+                <strong class="block truncate">{{ page.title }}</strong>
+                <span class="block truncate text-sm text-zinc-500">{{ page.slug }}</span>
+              </button>
+              <button
+                type="button"
+                class="rounded border border-red-300 p-2 text-red-700 disabled:cursor-not-allowed disabled:opacity-40"
+                aria-label="Remover landing page"
+                :disabled="content.pages.length <= 1"
+                @click="removePage(page.id)"
+              >
+                <Trash2 :size="15" />
+              </button>
+            </div>
           </div>
         </aside>
 
@@ -375,7 +499,7 @@ function fieldLabel(key: string) {
           <div class="mt-4 space-y-2">
             <div
               v-for="(section, index) in selectedPage.sections"
-              :key="section.id"
+              :key="index"
               class="rounded border p-3"
               :class="section.id === selectedSectionId ? 'border-[#e85d3f] bg-orange-50' : 'border-zinc-200'"
             >
@@ -411,7 +535,49 @@ function fieldLabel(key: string) {
               </div>
               <label class="grid gap-1 text-sm font-bold">
                 ID da seção
-                <input v-model="selectedSection.id" class="rounded border border-zinc-300 px-3 py-2 font-normal" />
+                <input
+                  :value="selectedSection.id"
+                  class="rounded border border-zinc-300 px-3 py-2 font-normal"
+                  @input="updateSelectedSectionId(($event.target as HTMLInputElement).value)"
+                />
+              </label>
+            </div>
+
+            <div class="mb-5 grid gap-3 rounded bg-zinc-100 p-4 md:grid-cols-2">
+              <label class="grid gap-1 text-sm font-bold">
+                Margem superior da seção
+                <input v-model.number="selectedSection.marginTop" type="number" min="0" class="rounded border border-zinc-300 px-3 py-2 font-normal" />
+                <span class="text-xs font-normal text-zinc-500">Distancia em pixels antes deste componente.</span>
+              </label>
+              <label class="grid gap-1 text-sm font-bold">
+                Margem inferior da seção
+                <input v-model.number="selectedSection.marginBottom" type="number" min="0" class="rounded border border-zinc-300 px-3 py-2 font-normal" />
+                <span class="text-xs font-normal text-zinc-500">Distancia em pixels depois deste componente.</span>
+              </label>
+            </div>
+
+            <div class="mb-5 grid gap-3 rounded bg-zinc-100 p-4 md:grid-cols-[1fr_auto]">
+              <label class="grid gap-1 text-sm font-bold">
+                Cor de fundo da seção
+                <span class="flex overflow-hidden rounded border border-zinc-300 bg-white">
+                  <input
+                    :value="selectedSection.backgroundColor || '#ffffff'"
+                    type="color"
+                    class="h-11 w-14 shrink-0 cursor-pointer border-0 bg-transparent p-1 disabled:cursor-not-allowed disabled:opacity-40"
+                    :disabled="selectedSection.backgroundTransparent"
+                    @input="updateSelectedSectionBackgroundColor(($event.target as HTMLInputElement).value)"
+                  />
+                  <input
+                    v-model="selectedSection.backgroundColor"
+                    class="min-w-0 flex-1 px-3 py-2 font-normal outline-none disabled:cursor-not-allowed disabled:bg-zinc-100 disabled:text-zinc-400"
+                    placeholder="Vazio usa a cor padrão do componente"
+                    :disabled="selectedSection.backgroundTransparent"
+                  />
+                </span>
+              </label>
+              <label class="flex items-end gap-2 pb-3 text-sm font-bold">
+                <input v-model="selectedSection.backgroundTransparent" type="checkbox" />
+                Fundo transparente
               </label>
             </div>
 
@@ -542,7 +708,11 @@ function fieldLabel(key: string) {
             </label>
             <label class="grid gap-2 text-sm font-bold">
               ID
-              <input v-model="selectedPage.id" class="rounded border border-zinc-300 px-3 py-2 font-normal" />
+              <input
+                :value="selectedPage.id"
+                class="rounded border border-zinc-300 px-3 py-2 font-normal"
+                @input="updateSelectedPageId(($event.target as HTMLInputElement).value)"
+              />
             </label>
           </div>
 
@@ -554,7 +724,7 @@ function fieldLabel(key: string) {
         <div class="rounded bg-white p-5 shadow-sm">
           <h2 class="text-xl font-black">Menu superior</h2>
           <div class="mt-4 grid gap-3 md:grid-cols-2">
-            <div v-for="(item, index) in selectedPage.menu" :key="`${item.label}-${item.href}-${index}`" class="rounded border border-zinc-200 p-3">
+            <div v-for="(item, index) in selectedPage.menu" :key="index" class="rounded border border-zinc-200 p-3">
               <div class="mb-3 flex items-center justify-between gap-3">
                 <span class="grid size-8 place-items-center rounded bg-zinc-100 text-sm font-black text-zinc-700">
                   {{ index + 1 }}

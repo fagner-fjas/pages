@@ -10,7 +10,7 @@ defineProps<{
 </script>
 
 <template>
-  <section class="bg-[var(--site-surface)] px-5 py-16 md:px-8 md:py-24">
+  <section class="bg-[var(--section-bg,var(--site-surface))] px-5 py-16 md:px-8 md:py-24">
     <div class="mx-auto max-w-7xl">
       <h2 class="text-4xl font-black leading-tight text-[var(--site-heading)] md:text-5xl">{{ data.title }}</h2>
       <div class="mt-10 grid gap-px overflow-hidden rounded bg-[var(--site-border)] md:grid-cols-3">
