@@ -190,7 +190,7 @@
           "type": "ProductShowcase",
           "enabled": true,
           "data": {
-            "title": "SGedu.",
+            "title": "SGEdu.",
             "text": "Um sistema criado especificamente para uma gestão escolar intuitiva, segura e de fácil acesso.",
             "image": {
               "src": "https://www.image2url.com/r2/default/images/1787857043037-c0a427c5-3be2-4f89-aba4-fa967429fa02.png",
@@ -347,16 +347,16 @@
                 "title": "Fale conosco",
                 "text": "Converse com nosso suporte para solicitar orçamento, tirar dúvidas ou contratar serviços.",
                 "action": {
-                  "label": "nosso contato",
-                  "href": "mailto:contato@fjas.com.br"
+                  "label": "Nosso whatsapp",
+                  "href": "https://wa.me/5583999031124?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%21"
                 }
               },
               {
-                "title": "Deixe um comentário",
-                "text": "Avalie os nossos serviços e nos ajude a melhorar continuamente!",
+                "title": "Nosso e-mail",
+                "text": "Nos envie uma mensagem eletrônica, solicite orçamentos ou avalie nossos serviços.",
                 "action": {
-                  "label": "Avalie agora",
-                  "href": "#home"
+                  "label": "Nosso e-mail",
+                  "href": "mailto:contato@fjas.com.br"
                 }
               }
             ]
