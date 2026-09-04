@@ -12,7 +12,7 @@ defineProps<{
 </script>
 
 <template>
-  <section class="bg-[var(--site-bg)] px-5 py-16 md:px-8 md:py-24">
+  <section class="bg-[var(--section-bg,var(--site-bg))] px-5 py-16 md:px-8 md:py-24">
     <div class="mx-auto max-w-7xl">
       <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
         <div>

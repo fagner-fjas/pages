@@ -13,7 +13,7 @@ defineProps<{
 </script>
 
 <template>
-  <section class="bg-[var(--site-surface)] px-5 py-16 md:px-8 md:py-24">
+  <section class="bg-[var(--section-bg,var(--site-surface))] px-5 py-16 md:px-8 md:py-24">
     <div class="mx-auto max-w-7xl">
       <div class="mb-10 flex flex-col justify-between gap-5 border-b border-[color:var(--site-border)] pb-8 md:flex-row md:items-end">
         <div>

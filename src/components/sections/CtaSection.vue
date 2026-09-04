@@ -10,7 +10,7 @@ defineProps<{
 </script>
 
 <template>
-  <section class="bg-[var(--site-dark)] px-5 py-12 text-white md:px-8">
+  <section class="bg-[var(--section-bg,var(--site-dark))] px-5 py-12 text-white md:px-8">
     <div class="mx-auto grid max-w-7xl gap-px overflow-hidden rounded bg-[var(--site-border)] md:grid-cols-2">
       <article v-for="card in data.cards" :key="card.title" class="bg-[var(--site-dark)] p-8 md:p-10">
         <h2 class="text-2xl font-black">{{ card.title }}</h2>

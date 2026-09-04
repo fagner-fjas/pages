@@ -17,7 +17,7 @@ defineProps<{
 </script>
 
 <template>
-  <section class="relative overflow-hidden bg-[var(--site-bg)] px-5 py-16 md:px-8 md:py-24">
+  <section class="relative overflow-hidden bg-[var(--section-bg,var(--site-bg))] px-5 py-16 md:px-8 md:py-24">
     <div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.02fr_0.98fr]">
       <div>
         <p class="mb-5 text-sm font-bold uppercase tracking-[0.24em] text-[var(--site-accent)]">{{ data.eyebrow }}</p>

@@ -84,11 +84,16 @@ export const sectionDefinitions: SectionDefinition[] = [
       id: 'products',
       type: 'ProductShowcase',
       enabled: true,
+      marginTop: 0,
+      marginBottom: 0,
+      backgroundColor: '',
+      backgroundTransparent: false,
       data: {
         title: 'Our Products Are Ready To Help Your Business',
         text: 'Descricao do produto.',
+        imagePosition: 'left',
         image: { src: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1100&q=80', alt: 'Produto', width: 560, height: 520 },
-        items: [{ title: 'Building Website', text: 'Descricao curta.' }]
+        items: [{ title: 'Building Website', text: 'Descricao curta.', href: '' }]
       }
     }
   },

@@ -46,19 +46,19 @@
           "kind": "section"
         },
         {
-          "label": "Produtos",
-          "href": "#products",
+          "label": "SGEdu",
+          "href": "#sgedu",
+          "kind": "section"
+        },
+        {
+          "label": "Treinamentos EAD",
+          "href": "#c_trenamento",
           "kind": "section"
         },
         {
           "label": "Contato",
           "href": "#contact",
           "kind": "section"
-        },
-        {
-          "label": "Admin",
-          "href": "/admin",
-          "kind": "page"
         }
       ],
       "footer": {
@@ -86,17 +86,17 @@
           "enabled": true,
           "data": {
             "eyebrow": "FJAS Tecnologia da Informação",
-            "title": "Uma empresa especializada em desenvolvimento de software",
+            "title": "Tecnologia para facilitar o seu trabalho",
             "text": "Criamos websites, plataformas e produtos digitais com arquitetura de código limpa, modular e de fácil escalabilidade.",
             "primaryAction": {
               "label": "Fale conosco",
               "href": "#contact"
             },
             "secondaryAction": {
-              "label": "Solicitar orçamento",
-              "href": "#contact"
+              "label": "",
+              "href": ""
             },
-            "badgeTitle": "Empresa com experiência na área",
+            "badgeTitle": "",
             "badgeText": "Projetos digitais consistentes para empresas que precisam crescer com clareza.",
             "images": [
               {
@@ -110,6 +110,111 @@
                 "alt": "Profissional trabalhando em notebook",
                 "width": 300,
                 "height": 380
+              }
+            ]
+          },
+          "marginTop": 0,
+          "marginBottom": 0,
+          "backgroundColor": "",
+          "backgroundTransparent": false
+        },
+        {
+          "id": "sgedu",
+          "type": "ProductShowcase",
+          "enabled": true,
+          "data": {
+            "title": "SGEdu",
+            "text": "O SGEdu é um sistema de gestão educacional que centraliza processos acadêmicos, administrativos e de comunicação em uma plataforma simples, segura e integrada. Com recursos para alunos, responsáveis, professores e gestores, ajuda instituições de ensino a organizar rotinas, acompanhar informações e tornar a gestão escolar mais eficiente.",
+            "imagePosition": "left",
+            "image": {
+              "src": "https://www.image2url.com/r2/default/images/1787857043037-c0a427c5-3be2-4f89-aba4-fa967429fa02.png",
+              "alt": "Dashboard SGEdu",
+              "width": 560,
+              "height": 560
+            },
+            "items": [
+              {
+                "title": "SGEdu - Aluno",
+                "text": "Este é um aplicativo disponível para Android e IOS, desenvolvido para os pais e responsáveis terem acesso à vida escolar do aluno, calendário escolar, notificações boletins e frequência.",
+                "href": "https://apps.apple.com/br/app/sgedu-aluno/id6745787998"
+              },
+              {
+                "title": "SGEdu - Escola",
+                "text": "Desenvolvido para que os proficionais da rede de ensino possam acessar de forma pratica e rápida, informações e recursos importantes das escolas, como a frequencia escolar e envio de alertas de segurança.",
+                "href": "https://apps.apple.com/br/app/sgedu-escola/id6768457237"
+              }
+            ]
+          },
+          "marginTop": 0,
+          "marginBottom": 0,
+          "backgroundColor": "#ffffff",
+          "backgroundTransparent": false
+        },
+        {
+          "id": "facial",
+          "type": "ProductShowcase",
+          "enabled": true,
+          "data": {
+            "title": "Reconhecimento facial escolar",
+            "text": "",
+            "imagePosition": "right",
+            "image": {
+              "src": "/uploads/1788087894103-screenshot-2026-08-30-at-08-01-10.webp",
+              "alt": "Aluno no reconhecimento facial",
+              "width": 300,
+              "height": 520
+            },
+            "items": [
+              {
+                "title": "Reconhecimento facial",
+                "text": "Controle de acesso e registro de frequência escolar para alunos e registro de tempo de trabalho diário semanal e mensal para colaboradores.",
+                "href": ""
+              },
+              {
+                "title": "Relatório em tempo real",
+                "text": "Informações via dupla checagem por biometria e chamada escolar, informando a quantidade exata de pessoas na escola",
+                "href": ""
+              },
+              {
+                "title": "Notificações no celular",
+                "text": "Pais e responsáveis recebem notificações no celular sempre o aluno for identificado pela biometria na escola.",
+                "href": ""
+              }
+            ]
+          },
+          "marginTop": 10,
+          "marginBottom": 10,
+          "backgroundColor": "#e2e3ee",
+          "backgroundTransparent": true
+        },
+        {
+          "id": "agenda-grades",
+          "type": "ProductShowcase",
+          "enabled": true,
+          "marginTop": 0,
+          "marginBottom": 0,
+          "backgroundColor": "#ffffff",
+          "backgroundTransparent": false,
+          "data": {
+            "title": "Agenda e Grades de Horários",
+            "text": "",
+            "imagePosition": "left",
+            "image": {
+              "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1100&q=80",
+              "alt": "Produto",
+              "width": 560,
+              "height": 520
+            },
+            "items": [
+              {
+                "title": "Agenda escolar",
+                "text": "Crie toda a agenda escolar, definindo datas de períodos letivos e eventos escolares. \nDefina também as datas limites para registros no diário escolar.",
+                "href": ""
+              },
+              {
+                "title": "Grade de horário",
+                "text": "Organize a grade de horários relacionada às disciplinas de cada turma, publique e disponibilize a grade de horário para cada professor, turma ou aluno.",
+                "href": ""
               }
             ]
           }
@@ -147,7 +252,11 @@
                 "text": "oferecemos suporte contínuo e qualificação com um curso integrado para os usuários."
               }
             ]
-          }
+          },
+          "marginTop": 0,
+          "marginBottom": 0,
+          "backgroundColor": "",
+          "backgroundTransparent": false
         },
         {
           "id": "clients",
@@ -183,9 +292,14 @@
                 "height": 260
               }
             ]
-          }
+          },
+          "marginTop": 0,
+          "marginBottom": 0,
+          "backgroundColor": "",
+          "backgroundTransparent": false
         },
         {
+<<<<<<< HEAD
           "id": "products",
           "type": "ProductShowcase",
           "enabled": true,
@@ -220,12 +334,15 @@
         },
         {
           "id": "article",
+=======
+          "id": "c_trenamento",
+>>>>>>> d1862b4ebffd57aba6d6bfdc70a1b9197bf3d766
           "type": "FeatureArticle",
           "enabled": true,
           "data": {
-            "date": "Nosso objetivo",
-            "title": "Engenharia de software focada em gestão, UX  e performance.",
-            "text": "Não criamos apenas código. Desenvolvemos  soluções digitais sob demanda, arquitetadas a partir do diagnóstico do seu negócio, além de sistemas gestão em saúde e educação.",
+            "date": "",
+            "title": "Treinamentos EAD",
+            "text": "A Central de trenamento é uma plataforma de ensiono EAD onde disponibilizamos acesso ao conteudo de formação para uso dos nossos sistemas. Também utilizado para hospedar cursos e trenamentos de entidades parceiras. ",
             "image": {
               "src": "https://images.unsplash.com/photo-1634839387651-5317dc8f4549?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
               "alt": "Equipe desenvolvendo estrategia digital",
@@ -234,23 +351,27 @@
             },
             "posts": [
               {
-                "title": "Estrutura modular e evolução contínua.",
+                "title": "Cursos e capítulos ilimitados",
                 "text": "No nosso sistema de gestão escolar, utilizamos módulos independentes que reduzem o tempo de implantação, o que permite novas funções em desenvolvimento sejam implementadas e atualizadas sem interromper o uso diário do sistema."
               },
               {
-                "title": "Código limpo e independência na gestão",
+                "title": "Testes interativos",
                 "text": "A jornada do usuário e a velocidade do sistema são planejadas para que a navegação seja fluida, Desenvolvemos painéis intuitivos que permitem a sua equipe gerenciar dados, atualizar conteúdos e acompanhar métricas sem depender de suporte técnico."
               },
               {
-                "title": "Experiência fluida para alunos, pais e gestores",
+                "title": "Relatórios de desempenho dos alunos",
                 "text": "A jornada do usuário dentro da plataforma é inteiramente desenhada com foco na realidade da rotina escolar. Criamos interfaces mobile e desktop extremamente simples e acessíveis, pensadas tanto para que os pais acompanhem a vida acadêmica e financeira dos filhos em poucos cliques, quanto para que os professores lancem notas e conteúdos rapidamente. O resultado é a redução de chamados na secretaria e um aumento real no engajamento de toda a comunidade escolar"
               },
               {
-                "title": "Desenvolvimento sob demanda e ecossistema modular",
+                "title": "Recursos de vídeos e PodCasts",
                 "text": "Nenhuma empresa opera da mesma forma. Em vez de prender sua instituição a um software engessado, criamos funcionalidades personalizadas e sistemas exclusivos para a sua rotina. Seja um método próprio de avaliação, um fluxo financeiro específico ou um portal customizado, desenvolvemos soluções sob medida que se integram perfeitamente à sua operação, garantindo evolução tecnológica no seu ritmo."
               }
             ]
-          }
+          },
+          "marginTop": 0,
+          "marginBottom": 0,
+          "backgroundColor": "",
+          "backgroundTransparent": false
         },
         {
           "id": "pricing",
@@ -307,7 +428,11 @@
                 "action": "Selecionar"
               }
             ]
-          }
+          },
+          "marginTop": 0,
+          "marginBottom": 0,
+          "backgroundColor": "",
+          "backgroundTransparent": false
         },
         {
           "id": "testimonials",
@@ -335,7 +460,11 @@
                 "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80"
               }
             ]
-          }
+          },
+          "marginTop": 0,
+          "marginBottom": 0,
+          "backgroundColor": "",
+          "backgroundTransparent": false
         },
         {
           "id": "contact",
@@ -360,7 +489,11 @@
                 }
               }
             ]
-          }
+          },
+          "marginTop": 0,
+          "marginBottom": 0,
+          "backgroundColor": "",
+          "backgroundTransparent": false
         }
       ]
     }

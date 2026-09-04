@@ -13,7 +13,7 @@ defineProps<{
 </script>
 
 <template>
-  <section class="bg-[var(--site-surface)] px-5 py-16 md:px-8 md:py-24">
+  <section class="bg-[var(--section-bg,var(--site-surface))] px-5 py-16 md:px-8 md:py-24">
     <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
       <div>
         <p class="mb-5 font-bold text-[var(--site-accent)]">{{ data.date }}</p>
