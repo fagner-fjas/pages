@@ -299,44 +299,7 @@
           "backgroundTransparent": false
         },
         {
-<<<<<<< HEAD
-          "id": "products",
-          "type": "ProductShowcase",
-          "enabled": true,
-          "data": {
-            "title": "SGEdu.",
-            "text": "Um sistema criado especificamente para uma gestão escolar intuitiva, segura e de fácil acesso.",
-            "image": {
-              "src": "https://www.image2url.com/r2/default/images/1787857043037-c0a427c5-3be2-4f89-aba4-fa967429fa02.png",
-              "alt": "Dashboard de produto digital",
-              "width": 560,
-              "height": 560
-            },
-            "items": [
-              {
-                "title": "Dashboards integrados",
-                "text": "Acompanhe facilmente as estatísticas da instituição e controle cada passo em um único lugar."
-              },
-              {
-                "title": "Controle de estudantes",
-                "text": "Cadastre, matricule e realize a gestão de alunos de forma intuitiva, tudo em conjunto com os responsáveis."
-              },
-              {
-                "title": "Reconhecimento facial",
-                "text": "Obtenha um sistema interno com ferramentas de biometria facial, permitindo o controle de frequências dos alunos de forma automática e precisa."
-              },
-              {
-                "title": "Sistema de segurança integrado",
-                "text": "Possibilidade de alertas em aparelhos de responsáveis em caso de situação perigosa ou emergencial ocorrendo na instituição, garantindo maior segurança."
-              }
-            ]
-          }
-        },
-        {
-          "id": "article",
-=======
           "id": "c_trenamento",
->>>>>>> d1862b4ebffd57aba6d6bfdc70a1b9197bf3d766
           "type": "FeatureArticle",
           "enabled": true,
           "data": {
