@@ -100,10 +100,10 @@
             "badgeText": "Projetos digitais consistentes para empresas que precisam crescer com clareza.",
             "images": [
               {
-                "src": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80",
-                "alt": "Equipe em reuniao criativa",
-                "width": 420,
-                "height": 520
+                "src": "https://www.image2url.com/r2/default/images/1789060675621-f036dc34-517a-4c28-9b48-9114a0af93ae.png",
+                "alt": "Telefone com SGEdu",
+                "width": 400,
+                "height": 450
               },
               {
                 "src": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
@@ -115,8 +115,8 @@
           },
           "marginTop": 0,
           "marginBottom": 0,
-          "backgroundColor": "",
-          "backgroundTransparent": false
+          "backgroundColor": "#eff2f6",
+          "backgroundTransparent": true
         },
         {
           "id": "sgedu",
@@ -167,17 +167,17 @@
             "items": [
               {
                 "title": "Reconhecimento facial",
-                "text": "Controle de acesso e registro de frequência escolar para alunos e registro de tempo de trabalho diário semanal e mensal para colaboradores.",
+                "text": "Controle de acesso e registro de frequência escolar para alunos e registro de tempo de trabalho diário semanal e mensal para colaboradores, permitindo um controle automatizado de alunos e colaboradores.",
                 "href": ""
               },
               {
                 "title": "Relatório em tempo real",
-                "text": "Informações via dupla checagem por biometria e chamada escolar, informando a quantidade exata de pessoas na escola",
+                "text": "Informações via dupla checagem por biometria e chamada escolar, informando a quantidade exata de pessoas na escola e quantos alunos faltaram as aulas a cada dia.",
                 "href": ""
               },
               {
                 "title": "Notificações no celular",
-                "text": "Pais e responsáveis recebem notificações no celular sempre o aluno for identificado pela biometria na escola.",
+                "text": "Pais e responsáveis recebem notificações em seus dispositivos sempre o aluno for identificado pela biometria na escola, garantindo segurança e integração entre responsáveis e escola.",
                 "href": ""
               }
             ]
@@ -200,7 +200,7 @@
             "text": "",
             "imagePosition": "left",
             "image": {
-              "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1100&q=80",
+              "src": "https://www.image2url.com/r2/default/images/1789058404175-29a0461d-904a-444b-abab-a522c197fbff.png",
               "alt": "Produto",
               "width": 560,
               "height": 520
@@ -268,16 +268,16 @@
             "text": "Sistemas especializados e com foco em gestão, com plataforma de cursos integrados, como o SGedu, uma aplicação que facilita a rotina de dezenas de instituições de ensino pelo Brasil.",
             "images": [
               {
-                "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=80",
-                "alt": "Reuniao de estrategia",
-                "width": 330,
-                "height": 260
+                "src": "https://www.image2url.com/r2/default/images/1789056479494-9dfc3b53-7315-4e9b-b4f0-8cf3934d1c36.png",
+                "alt": "Login SGEdu",
+                "width": 340,
+                "height": 240
               },
               {
-                "src": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=700&q=80",
-                "alt": "Equipe em sala",
-                "width": 330,
-                "height": 260
+                "src": "https://www.image2url.com/r2/default/images/1789059276832-0b80d910-344d-4e05-ae76-da684d3cdb20.png",
+                "alt": "Dashboard Alunos",
+                "width": 340,
+                "height": 240
               },
               {
                 "src": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=700&q=80",
@@ -305,7 +305,7 @@
           "data": {
             "date": "",
             "title": "Treinamentos EAD",
-            "text": "A Central de trenamento é uma plataforma de ensiono EAD onde disponibilizamos acesso ao conteudo de formação para uso dos nossos sistemas. Também utilizado para hospedar cursos e trenamentos de entidades parceiras. ",
+            "text": "A Central de treinamento é uma plataforma de ensino EAD onde disponibilizamos acesso ao conteúdo de formação para uso dos nossos sistemas. Também utilizado para hospedar cursos e treinamentos de entidades parceiras, os cursos são rápidos e instruem como utilizar os sistemas e aproveitar todas as funcionalidades. ",
             "image": {
               "src": "https://images.unsplash.com/photo-1634839387651-5317dc8f4549?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
               "alt": "Equipe desenvolvendo estrategia digital",
@@ -315,19 +315,19 @@
             "posts": [
               {
                 "title": "Cursos e capítulos ilimitados",
-                "text": "No nosso sistema de gestão escolar, utilizamos módulos independentes que reduzem o tempo de implantação, o que permite novas funções em desenvolvimento sejam implementadas e atualizadas sem interromper o uso diário do sistema."
+                "text": "No nosso sistema de gestão escolar, utilizamos uma plataforma de cursos integrada que permite que profissionais e gestores tenham o acompanhamento e formação necessária para a utilização diária do sistema de forma autônoma, sem depender do suporte técnico."
               },
               {
-                "title": "Testes interativos",
-                "text": "A jornada do usuário e a velocidade do sistema são planejadas para que a navegação seja fluida, Desenvolvemos painéis intuitivos que permitem a sua equipe gerenciar dados, atualizar conteúdos e acompanhar métricas sem depender de suporte técnico."
+                "title": "Evolução contínua",
+                "text": "Sempre que necessário, o nosso suporte técnico estará disponível para sua equipe, permitindo a parceria e a evolução contínua. Venha até nós com uma ideia de novas funcionalidades e nos ajude a facilitar a rotina de sua instituição ao aplicar melhorias práticas ao sistema."
               },
               {
                 "title": "Relatórios de desempenho dos alunos",
-                "text": "A jornada do usuário dentro da plataforma é inteiramente desenhada com foco na realidade da rotina escolar. Criamos interfaces mobile e desktop extremamente simples e acessíveis, pensadas tanto para que os pais acompanhem a vida acadêmica e financeira dos filhos em poucos cliques, quanto para que os professores lancem notas e conteúdos rapidamente. O resultado é a redução de chamados na secretaria e um aumento real no engajamento de toda a comunidade escolar"
+                "text": "No nosso sistema escolar (SGEdu), diversas funcionalidades estão disponíveis, entre elas, o relatório automático do desempenho dos alunos. O mesmo pode ser acompanhado por responsáveis e por parte da instituição. Permitindo que a escola funcione de forma integrada a comunidade e tornando a emissão de boletins automática, facilitando o trabalho da gestão e dos profissionais."
               },
               {
-                "title": "Recursos de vídeos e PodCasts",
-                "text": "Nenhuma empresa opera da mesma forma. Em vez de prender sua instituição a um software engessado, criamos funcionalidades personalizadas e sistemas exclusivos para a sua rotina. Seja um método próprio de avaliação, um fluxo financeiro específico ou um portal customizado, desenvolvemos soluções sob medida que se integram perfeitamente à sua operação, garantindo evolução tecnológica no seu ritmo."
+                "title": "Outras funcionalidades",
+                "text": "Os nossos sistemas também oferecem outras funções, como: Calendário escolar, boletins, transferências de alunos, dashboards com dados, relatórios automáticos de turmas e alunos, gestão de profissionais, banco de dados de egressos, registros de aulas, controle de frequência, geolocalização e acesso por meio de dispositivos móveis a alunos, pais, responsáveis e toda a comunidade escolar."
               }
             ]
           },
