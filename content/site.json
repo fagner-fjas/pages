@@ -100,23 +100,23 @@
             "badgeText": "Projetos digitais consistentes para empresas que precisam crescer com clareza.",
             "images": [
               {
-                "src": "https://www.image2url.com/r2/default/images/1789060675621-f036dc34-517a-4c28-9b48-9114a0af93ae.png",
+                "src": "https://www.image2url.com/r2/default/images/1789145875750-35faeeea-beba-40eb-95c7-30ac9426e77e.png",
                 "alt": "Telefone com SGEdu",
-                "width": 400,
+                "width": 420,
                 "height": 450
               },
               {
-                "src": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
+                "src": "https://www.image2url.com/r2/default/images/1789146289717-34d641cf-fc4b-4020-9e67-c81b34ec4a59.png",
                 "alt": "Profissional trabalhando em notebook",
-                "width": 300,
-                "height": 380
+                "width": 340,
+                "height": 350
               }
             ]
           },
           "marginTop": 0,
           "marginBottom": 0,
           "backgroundColor": "#eff2f6",
-          "backgroundTransparent": true
+          "backgroundTransparent": false
         },
         {
           "id": "sgedu",
@@ -159,7 +159,7 @@
             "text": "",
             "imagePosition": "right",
             "image": {
-              "src": "/uploads/1788087894103-screenshot-2026-08-30-at-08-01-10.webp",
+              "src": "https://www.image2url.com/r2/default/images/1789144816815-da688db6-558b-4c3e-b388-bb7f246464f7.png",
               "alt": "Aluno no reconhecimento facial",
               "width": 300,
               "height": 520
@@ -185,7 +185,7 @@
           "marginTop": 10,
           "marginBottom": 10,
           "backgroundColor": "#e2e3ee",
-          "backgroundTransparent": true
+          "backgroundTransparent": false
         },
         {
           "id": "agenda-grades",
@@ -274,20 +274,20 @@
                 "height": 240
               },
               {
-                "src": "https://www.image2url.com/r2/default/images/1789059276832-0b80d910-344d-4e05-ae76-da684d3cdb20.png",
-                "alt": "Dashboard Alunos",
+                "src": "https://www.image2url.com/r2/default/images/1789155030437-413ec7a0-eca1-42c6-a790-aebdf134d38c.jpeg",
+                "alt": "SGEdu no monitor",
                 "width": 340,
                 "height": 240
               },
               {
-                "src": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=700&q=80",
-                "alt": "Apresentacao de negocio",
+                "src": "https://www.image2url.com/r2/default/images/1789148667214-92c8714c-fbae-4faa-a48f-3caa684f8c06.jpeg",
+                "alt": "Diretora usando o sistema",
                 "width": 330,
                 "height": 260
               },
               {
-                "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=80",
-                "alt": "Workshop criativo",
+                "src": "https://www.image2url.com/r2/default/images/1789059276832-0b80d910-344d-4e05-ae76-da684d3cdb20.png",
+                "alt": "Dashboard Alunos",
                 "width": 330,
                 "height": 260
               }
