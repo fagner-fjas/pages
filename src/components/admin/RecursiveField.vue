@@ -81,11 +81,9 @@ function fieldLabel(key: string) {
           <input v-if="typeof item === 'string' || typeof item === 'number'" v-model="value[index]" class="w-full rounded border border-zinc-300 px-3 py-2" />
           <div v-else-if="isRecord(item)" class="space-y-3">
             <RecursiveField
-              v-for="(_, nestedKey) in item"
-              :key="nestedKey"
-              :label="fieldLabel(String(nestedKey))"
-              :model="item"
-              :field-key="String(nestedKey)"
+              :label="`${label} ${index + 1}`"
+              :model="value"
+              :field-key="index"
               @add-item="(target, targetFieldKey) => emit('addItem', target, targetFieldKey)"
               @remove-item="(target, itemIndex) => emit('removeItem', target, itemIndex)"
               @image-selected="(event, object) => emit('imageSelected', event, object)"

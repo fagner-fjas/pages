@@ -26,6 +26,10 @@ export async function login(password: string): Promise<string> {
     body: JSON.stringify({ password }),
   })
 
+  if (response.status === 429) {
+    throw new Error('Muitas tentativas de acesso. Aguarde 15 minutos e tente novamente.')
+  }
+
   if (!response.ok) {
     throw new Error('Senha invalida ou servidor do CMS indisponivel.')
   }

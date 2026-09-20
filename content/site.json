@@ -41,11 +41,6 @@
           "kind": "section"
         },
         {
-          "label": "Etapas",
-          "href": "#services",
-          "kind": "section"
-        },
-        {
           "label": "SGEdu",
           "href": "#sgedu",
           "kind": "section"
@@ -86,8 +81,8 @@
           "enabled": true,
           "data": {
             "eyebrow": "FJAS Tecnologia da Informação",
-            "title": "Tecnologia para facilitar o seu trabalho",
-            "text": "Criamos websites, plataformas e produtos digitais com arquitetura de código limpa, modular e de fácil escalabilidade.",
+            "title": "Licenciamento e desenvolvimento de software sob demanda",
+            "text": "Somos uma empresa especializada em desenvolver soluções em tecnologia. ",
             "primaryAction": {
               "label": "Fale conosco",
               "href": "#contact"
@@ -155,7 +150,7 @@
           "type": "ProductShowcase",
           "enabled": true,
           "data": {
-            "title": "Reconhecimento facial escolar",
+            "title": "Frequência por Reconhecimento Facial",
             "text": "",
             "imagePosition": "right",
             "image": {
@@ -167,17 +162,17 @@
             "items": [
               {
                 "title": "Reconhecimento facial",
-                "text": "Controle de acesso e registro de frequência escolar para alunos e registro de tempo de trabalho diário semanal e mensal para colaboradores, permitindo um controle automatizado de alunos e colaboradores.",
+                "text": "Controle de acesso e registro de frequência escolar para alunos e registro de tempo de trabalho diário semanal e mensal para colaboradores.",
                 "href": ""
               },
               {
                 "title": "Relatório em tempo real",
-                "text": "Informações via dupla checagem por biometria e chamada escolar, informando a quantidade exata de pessoas na escola e quantos alunos faltaram as aulas a cada dia.",
+                "text": "Dupla checagem por biometria e chamada escolar, informando a quantidade exata de pessoas na escola e quantos alunos faltaram as aulas a cada dia.\nAjudando no controle de gastos com merenda, segurança e levantamento de dados na escola.",
                 "href": ""
               },
               {
-                "title": "Notificações no celular",
-                "text": "Pais e responsáveis recebem notificações em seus dispositivos sempre o aluno for identificado pela biometria na escola, garantindo segurança e integração entre responsáveis e escola.",
+                "title": "Informações no celular",
+                "text": "Pais, responsáveis e profissionais podem receber notificações em seus dispositivos sempre o aluno for identificado pela biometria na escola, garantindo segurança e integração entre responsáveis e escola.",
                 "href": ""
               }
             ]
@@ -220,36 +215,63 @@
           }
         },
         {
-          "id": "services",
+          "id": "grade_de_horarios",
+          "type": "ProductShowcase",
+          "enabled": true,
+          "marginTop": 0,
+          "marginBottom": 0,
+          "backgroundColor": "#e2e3ee",
+          "backgroundTransparent": false,
+          "data": {
+            "title": "Gerador de Grades de Horários",
+            "text": "Monte a grade de horário escolar por turma ou por professor, de forma simples e rápida. Com o gerador automático do SGEdu você consegue criar ou editar a grade de horários e disponibilizar para todos os profissionais através do sistema, ou imprimir em A4 ou formato de cartaz.",
+            "imagePosition": "right",
+            "image": {
+              "src": "/uploads/1789856372007-grade-de-horarios.webp",
+              "alt": "Produto",
+              "width": 560,
+              "height": 520
+            },
+            "items": [
+              {
+                "title": "Building Website",
+                "text": "Descricao curta.",
+                "href": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "mais_recursos",
           "type": "ServiceSteps",
           "enabled": true,
           "data": {
-            "eyebrow": "Como trabalhamos",
-            "title": "Transformamos grandes ideias em plataformas web de alta performance",
+            "eyebrow": "Mais recursos do SGEdu",
+            "title": "Controle acadêmico",
             "action": {
               "label": "Ver mais",
-              "href": "#products"
+              "href": "https://sgedu.com.br"
             },
             "items": [
               {
                 "number": "01.",
-                "title": "Imersão e Diagnóstico",
-                "text": "Analisamos os desafios do seu negócio para desenhar a arquitetura ideal da solução."
+                "title": "Controle pedagógico",
+                "text": "Registro de aulas com ferramentas de controle baseada no calendárioa acadêmico do ano letivo."
               },
               {
                 "number": "02.",
-                "title": "Coleta de Dados",
-                "text": "Nesta etapa, os dados da sua instituição são coletados, organizados e estruturados para garantir segurança e estabilidade."
+                "title": "Avaliações",
+                "text": "Gestão de avaliações e boletinspara, com processamento automático das médias e histórico escolar do aluno, contemplando avaliações por nota ou conceito para educação infantil."
               },
               {
                 "number": "03.",
-                "title": "Implantação",
-                "text": "Codificamos, realizando testes rigorosos e implantamos o sistema."
+                "title": "Gestão de prodtividade",
+                "text": "Relatórios de monitoramento dos registros de aula, frequência escolar de alunos e professores."
               },
               {
                 "number": "04.",
-                "title": "Melhoria e cursos",
-                "text": "oferecemos suporte contínuo e qualificação com um curso integrado para os usuários."
+                "title": "Turmas de atendimento especializado ",
+                "text": "Configuracões para o contexto do atendimento expecializado em turmas de AEE"
               }
             ]
           },
@@ -264,8 +286,8 @@
           "enabled": true,
           "data": {
             "kicker": "",
-            "title": "Nossos sistemas",
-            "text": "Sistemas especializados e com foco em gestão, com plataforma de cursos integrados, como o SGedu, uma aplicação que facilita a rotina de dezenas de instituições de ensino pelo Brasil.",
+            "title": "Atualizacões e duporte por demanda",
+            "text": "Novos recursos são implementados a todo momento, sempre para atender às necessidades dos nossos clientes. As imagens ao lado mostram recursos adicionados ao sistema, baseados em necessidades reais de redes de ensino. Captamos todas as demandas e desenvolvemos soluções, afim de manter o suorte e melhoria contínua do serviço.",
             "images": [
               {
                 "src": "https://www.image2url.com/r2/default/images/1789056479494-9dfc3b53-7315-4e9b-b4f0-8cf3934d1c36.png",
@@ -286,8 +308,8 @@
                 "height": 260
               },
               {
-                "src": "https://www.image2url.com/r2/default/images/1789059276832-0b80d910-344d-4e05-ae76-da684d3cdb20.png",
-                "alt": "Dashboard Alunos",
+                "src": "/uploads/1789862293181-calendai-rio-linear.webp",
+                "alt": "Calendário com meses em formato linear.",
                 "width": 330,
                 "height": 260
               }
@@ -305,25 +327,25 @@
           "data": {
             "date": "",
             "title": "Treinamentos EAD",
-            "text": "A Central de treinamento é uma plataforma de ensino EAD onde disponibilizamos acesso ao conteúdo de formação para uso dos nossos sistemas. Também utilizado para hospedar cursos e treinamentos de entidades parceiras, os cursos são rápidos e instruem como utilizar os sistemas e aproveitar todas as funcionalidades. ",
+            "text": "A Central de treinamento é uma plataforma de ensino EAD onde disponibilizamos acesso ao conteúdo de formação para uso do SGEdu. Também utilizado para hospedar cursos e treinamentos de entidades parceiras, os cursos são rápidos e instruem como utilizar os sistemas e aproveitar todas as funcionalidades. ",
             "image": {
-              "src": "https://images.unsplash.com/photo-1634839387651-5317dc8f4549?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "src": "/uploads/1789854579190-ead-fjas-quadrada-v2.webp",
               "alt": "Equipe desenvolvendo estrategia digital",
               "width": 500,
               "height": 620
             },
             "posts": [
               {
-                "title": "Cursos e capítulos ilimitados",
-                "text": "No nosso sistema de gestão escolar, utilizamos uma plataforma de cursos integrada que permite que profissionais e gestores tenham o acompanhamento e formação necessária para a utilização diária do sistema de forma autônoma, sem depender do suporte técnico."
+                "title": "Integração e acesso a plataforma",
+                "text": "Por padrão, usuários do SGEdu conseguem validar o seu acesso à Central de Treinamento com acesso liberado para os respectívos cursos vinculados ao seu cargo na rede de ensino.\n\nOs demais usuário poderão acessar a plataforma atravéz de links de convite para o cadastro."
               },
               {
-                "title": "Evolução contínua",
-                "text": "Sempre que necessário, o nosso suporte técnico estará disponível para sua equipe, permitindo a parceria e a evolução contínua. Venha até nós com uma ideia de novas funcionalidades e nos ajude a facilitar a rotina de sua instituição ao aplicar melhorias práticas ao sistema."
+                "title": "Formato da aprendizagem",
+                "text": "A plataforma suporta videoaulas, páginas dinâmicas, lives com quadro interativos, podcasts entre outro, entre outros conteúdos."
               },
               {
-                "title": "Relatórios de desempenho dos alunos",
-                "text": "No nosso sistema escolar (SGEdu), diversas funcionalidades estão disponíveis, entre elas, o relatório automático do desempenho dos alunos. O mesmo pode ser acompanhado por responsáveis e por parte da instituição. Permitindo que a escola funcione de forma integrada a comunidade e tornando a emissão de boletins automática, facilitando o trabalho da gestão e dos profissionais."
+                "title": "Avaliações",
+                "text": "Cada capítulo ou curso pode conter um teste, com vários formatos de avaliações diferentes, como avaliações de multiplas escolhas, elaboração de formulas matemáticas, avaliação por texto entre outras. "
               },
               {
                 "title": "Outras funcionalidades",
@@ -400,7 +422,7 @@
         {
           "id": "testimonials",
           "type": "TestimonialsSection",
-          "enabled": true,
+          "enabled": false,
           "data": {
             "title": "Feedbacks de Parceiros",
             "items": [
@@ -450,6 +472,79 @@
                   "label": "Nosso e-mail",
                   "href": "mailto:contato@fjas.com.br"
                 }
+              }
+            ]
+          },
+          "marginTop": 0,
+          "marginBottom": 0,
+          "backgroundColor": "",
+          "backgroundTransparent": false
+        },
+        {
+          "id": "article-1789854453218",
+          "type": "FeatureArticle",
+          "enabled": false,
+          "data": {
+            "date": "12 Agosto 2026",
+            "title": "Business Develops Quickly And Stably With Agency",
+            "text": "Resumo do artigo.",
+            "image": {
+              "src": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1000&q=80",
+              "alt": "Artigo",
+              "width": 500,
+              "height": 620
+            },
+            "posts": [
+              {
+                "title": "Rapid Development Of Agency Technology Today",
+                "text": "Resumo curto."
+              }
+            ]
+          },
+          "marginTop": 0,
+          "marginBottom": 0,
+          "backgroundColor": "",
+          "backgroundTransparent": false
+        },
+        {
+          "id": "products-1789854464110",
+          "type": "ProductShowcase",
+          "enabled": false,
+          "marginTop": 0,
+          "marginBottom": 0,
+          "backgroundColor": "",
+          "backgroundTransparent": false,
+          "data": {
+            "title": "Our Products Are Ready To Help Your Business",
+            "text": "Descricao do produto.",
+            "imagePosition": "left",
+            "image": {
+              "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1100&q=80",
+              "alt": "Produto",
+              "width": 560,
+              "height": 520
+            },
+            "items": [
+              {
+                "title": "Building Website",
+                "text": "Descricao curta.",
+                "href": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "testimonials-1789854502159",
+          "type": "TestimonialsSection",
+          "enabled": false,
+          "data": {
+            "title": "Feelings Of The Clients",
+            "items": [
+              {
+                "name": "Albert Flores",
+                "meta": "2026",
+                "quote": "Depoimento do cliente.",
+                "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80"
               }
             ]
           },

@@ -11,8 +11,27 @@ const contentPath = path.join(rootDir, 'content', 'site.json')
 const uploadDir = path.join(rootDir, 'public', 'uploads')
 const distDir = path.join(rootDir, 'dist')
 const port = Number(process.env.PORT ?? 4174)
-const password = process.env.CMS_PASSWORD ?? 'admin123'
-const tokens = new Set()
+const configPath = path.join(rootDir, 'config', 'cms.json')
+let config
+try {
+  config = JSON.parse(await fs.readFile(configPath, 'utf8'))
+} catch {
+  throw new Error('Configure a senha em config/cms.json antes de iniciar o CMS. Use config/cms.example.json como modelo.')
+}
+if (typeof config.password !== 'string' || config.password.trim().length < 12) {
+  throw new Error('Defina uma senha com pelo menos 12 caracteres em config/cms.json.')
+}
+const passwordHash = crypto.createHash('sha256').update(config.password).digest()
+delete config.password
+const tokens = new Map()
+const loginAttempts = new Map()
+const sessionDuration = 8 * 60 * 60 * 1000
+const loginWindow = 15 * 60 * 1000
+setInterval(() => {
+  const now = Date.now()
+  for (const [token, expiresAt] of tokens) if (expiresAt <= now) tokens.delete(token)
+  for (const [ip, attempt] of loginAttempts) if (attempt.expiresAt <= now) loginAttempts.delete(ip)
+}, 60_000).unref()
 const isApiOnly = process.argv.includes('--api-only')
 
 const app = express()
@@ -31,13 +50,29 @@ app.get('/api/health', (_request, response) => {
 })
 
 app.post('/api/login', (request, response) => {
-  if (request.body?.password !== password) {
+  response.set('Cache-Control', 'no-store')
+  const now = Date.now()
+  const ip = request.ip
+  let attempt = loginAttempts.get(ip)
+  if (!attempt || attempt.expiresAt <= now) {
+    attempt = { count: 0, expiresAt: now + loginWindow }
+    loginAttempts.set(ip, attempt)
+  }
+  if (attempt.count >= 5) {
+    response.set('Retry-After', String(Math.ceil((attempt.expiresAt - now) / 1000)))
+    response.status(429).json({ error: 'Too many login attempts' })
+    return
+  }
+  const candidate = request.body?.password
+  if (typeof candidate !== 'string' || !crypto.timingSafeEqual(crypto.createHash('sha256').update(candidate).digest(), passwordHash)) {
+    attempt.count += 1
     response.status(401).json({ error: 'Invalid password' })
     return
   }
 
   const token = crypto.randomBytes(32).toString('hex')
-  tokens.add(token)
+  loginAttempts.delete(ip)
+  tokens.set(token, now + sessionDuration)
   response.json({ token })
 })
 
@@ -114,7 +149,8 @@ async function readContent() {
 function requireAuth(request, response, next) {
   const token = request.headers.authorization?.replace(/^Bearer\s+/i, '')
 
-  if (!token || !tokens.has(token)) {
+  if (!token || (tokens.get(token) ?? 0) <= Date.now()) {
+    if (token) tokens.delete(token)
     response.status(401).json({ error: 'Unauthorized' })
     return
   }

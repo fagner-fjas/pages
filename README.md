@@ -6,31 +6,31 @@ Projeto Vue 3 + Vite + Tailwind CSS para criar landing pages modulares com conte
 
 ```bash
 npm install
+cp config/cms.example.json config/cms.json
+```
+
+Edite `config/cms.json` e preencha `password` com uma senha exclusiva de pelo menos 12 caracteres. Depois inicie:
+
+```bash
 npm run dev:cms
 ```
 
 Abra a URL exibida pelo Vite. O gestor fica em `/admin`.
 
-Senha local padrao:
+Nao existe senha padrao. O servidor exige uma senha valida no arquivo para iniciar. Para trocar a senha, edite o arquivo e reinicie o servidor; isso tambem encerra as sessoes existentes. A variavel `CMS_PASSWORD` nao e mais utilizada.
 
-```text
-admin123
-```
-
-Para trocar a senha:
-
-```bash
-CMS_PASSWORD="sua-senha" npm run dev:cms
-```
+O arquivo `config/cms.json` e privado, ignorado pelo Git e nao entra no build. O arquivo de exemplo pode ser versionado, sempre sem senha. O login limita cinco tentativas incorretas por IP a cada 15 minutos, e as sessoes expiram apos oito horas.
 
 ## Produção
 
 ```bash
 npm run build
-CMS_PASSWORD="sua-senha" npm run start
+npm run start
 ```
 
 O servidor `npm run start` entrega o site compilado, a API do micro CMS e os uploads.
+
+Antes de publicar, edite e copie `config/cms.json` para a pasta `config` do servidor, fora de `dist` e `public`. Restrinja a leitura ao usuario que executa o Node (por exemplo, `chmod 600 config/cms.json`). Nunca publique a raiz do projeto como uma pasta estatica; use o servidor Node e HTTPS na hospedagem. Hospedar apenas `dist` nao disponibiliza o login, a edicao nem o upload do CMS.
 
 ## Conteudo portatil
 

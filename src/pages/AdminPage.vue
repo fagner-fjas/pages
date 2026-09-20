@@ -319,6 +319,11 @@ function addArrayItem(target: unknown[], fieldKey?: string | number) {
     return
   }
 
+  if (selectedSection.value?.type === 'ClientGallery' && fieldKey === 'images') {
+    target.push({ src: '', alt: 'Imagem', width: 330, height: 260 })
+    return
+  }
+
   if (selectedSection.value?.type === 'ProductShowcase' && fieldKey === 'items') {
     target.push({ title: 'Novo item', text: 'Descricao do item.', href: '' })
     return
@@ -379,7 +384,7 @@ function fieldLabel(key: string) {
       <form class="w-full max-w-md rounded bg-white p-8 shadow-xl shadow-zinc-900/10" @submit.prevent="handleLogin">
         <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#e85d3f]">Micro CMS</p>
         <h1 class="mt-3 text-3xl font-black">Entrar no gestor</h1>
-        <p class="mt-3 text-zinc-600">Use a senha configurada no servidor. Padrao local: admin123.</p>
+        <p class="mt-3 text-zinc-600">Digite sua senha para acessar o painel.</p>
         <input
           v-model="password"
           type="password"
